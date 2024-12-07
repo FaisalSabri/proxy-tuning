@@ -1,0 +1,6697 @@
+{
+  "results": [
+    {
+      "tokens": [
+        "Does",
+        "n",
+        "'",
+        "t",
+        "know",
+        "how",
+        "to",
+        "sw",
+        "im",
+        "\n",
+        "\n",
+        "##",
+        "#",
+        "Input",
+        ":",
+        "\n",
+        "\u00bf",
+        "Qu",
+        "\u00e9",
+        "tal",
+        "est",
+        "\u00e1s",
+        "?",
+        "\n",
+        "\n",
+        "##",
+        "#",
+        "Response",
+        ":",
+        "\n",
+        "How",
+        "are",
+        "you",
+        "doing",
+        "?"
+      ],
+      "text": "Doesn't know how to swim\n\n### Input:\n\u00bfQu\u00e9 tal est\u00e1s?\n\n### Response:\nHow are you doing?",
+      "probabilities": {
+        "base": [
+          0.02507064864039421,
+          0.6798075437545776,
+          0.9617722034454346,
+          0.9996880292892456,
+          0.4409317672252655,
+          0.1884446144104004,
+          0.9937300682067871,
+          0.9961666464805603,
+          0.9997499585151672,
+          0.7616740465164185,
+          0.5873259902000427,
+          0.2016071230173111,
+          0.9917920827865601,
+          0.3002479076385498,
+          0.973118782043457,
+          0.9825531244277954,
+          0.07659522444009781,
+          0.07711072266101837,
+          0.7869146466255188,
+          0.05322901904582977,
+          0.03411073237657547,
+          0.8998879790306091,
+          0.7572840452194214,
+          0.9132596850395203,
+          0.9856534600257874,
+          0.9936074018478394,
+          0.999660849571228,
+          0.9775245189666748,
+          0.9964907765388489,
+          0.9850399494171143,
+          0.22311125695705414,
+          0.9091305732727051,
+          0.9939427971839905,
+          0.32291179895401,
+          0.9512124061584473
+        ],
+        "expert": [
+          0.009613736532628536,
+          0.8215360045433044,
+          0.6882164478302002,
+          0.9998599290847778,
+          0.20314835011959076,
+          0.973858654499054,
+          0.9976778626441956,
+          0.9996354579925537,
+          0.99996018409729,
+          0.6684316992759705,
+          0.9891329407691956,
+          0.9864571690559387,
+          0.9999992847442627,
+          0.9954541921615601,
+          0.9999833106994629,
+          0.9999531507492065,
+          0.22022809088230133,
+          0.2966879904270172,
+          0.646987795829773,
+          0.050867289304733276,
+          0.13675017654895782,
+          0.826085090637207,
+          0.830238938331604,
+          0.7132450938224792,
+          0.9996047616004944,
+          0.9999518394470215,
+          1.0,
+          0.9999191761016846,
+          0.9999947547912598,
+          0.9999290704727173,
+          0.952560544013977,
+          0.9621054530143738,
+          0.9995208978652954,
+          0.3486630916595459,
+          0.9740551710128784
+        ]
+      },
+      "predictions": {
+        "base": "Hen't know\n to swim\n\nNo# Input:\nHeC\u00e9 es?\u00e1s?\n\n### Response:\n\u00bf are you??",
+        "expert": "Non't he how to swim\n\n### Input:\n\u00bfQu\u00e9 te est\u00e1s?\n\n### Response:\nHow are you??",
+        "dexperts": "Doesn't know how to swim\n\n### Input:\n\u00bfQu\u00e9 tal est\u00e1s?\n\n### Response:\nHow are you doing?",
+        "antiexpert": "Hen't he how to swim\n\n### Input:\nElC\u00e9 h?\u00e1s?\n\n### Response:\n\u00bf are you??"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.0,
+          "english": 0.0,
+          "spanish": 0.0
+        },
+        "meteor": {
+          "overall": 0.0,
+          "english": 0.0,
+          "spanish": 0.0
+        },
+        "gleu": {
+          "overall": 0.0,
+          "english": 0.0,
+          "spanish": 0.0
+        },
+        "errant": 0.0,
+        "is_hallucination": true
+      }
+    },
+    {
+      "tokens": [
+        "They",
+        "do",
+        "not",
+        "have",
+        "the",
+        "books"
+      ],
+      "text": "They do not have the books",
+      "probabilities": {
+        "base": [
+          0.7019411325454712,
+          0.518119215965271,
+          0.9960544109344482,
+          0.9639484286308289,
+          0.9248467683792114,
+          0.9742484092712402
+        ],
+        "expert": [
+          0.9971265196800232,
+          0.49653786420822144,
+          0.9995330572128296,
+          0.9989398121833801,
+          0.9752728939056396,
+          0.998365581035614
+        ]
+      },
+      "predictions": {
+        "base": "They do not have the books",
+        "expert": "They do not have the books",
+        "dexperts": "They do not have the books",
+        "antiexpert": "E do not have the books"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 2.6971259331602326e-78,
+          "english": 2.6971259331602326e-78,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.35714285714285715,
+          "english": 0.35714285714285715,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.18421052631578946,
+          "english": 0.18421052631578946,
+          "spanish": null
+        },
+        "errant": 0.8181818181818181
+      }
+    },
+    {
+      "tokens": [
+        "I",
+        "saw",
+        "her",
+        "at",
+        "the",
+        "party",
+        "yesterday"
+      ],
+      "text": "I saw her at the party yesterday",
+      "probabilities": {
+        "base": [
+          0.7806584239006042,
+          0.9598730802536011,
+          0.973929226398468,
+          0.9829229116439819,
+          0.9978469610214233,
+          0.9993076324462891,
+          0.9944540858268738
+        ],
+        "expert": [
+          0.22905677556991577,
+          0.8841186761856079,
+          0.9987573623657227,
+          0.9984410405158997,
+          0.999562680721283,
+          0.9999459981918335,
+          0.9987529516220093
+        ]
+      },
+      "predictions": {
+        "base": "I saw her at the party yesterday",
+        "expert": "E saw her at the party yesterday",
+        "dexperts": "I saw her at the party yesterday",
+        "antiexpert": "I saw her at the party yesterday"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.36787944117144233,
+          "english": 0.36787944117144233,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.5255485652907779,
+          "english": 0.5255485652907779,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.44,
+          "english": 0.44,
+          "spanish": null
+        },
+        "errant": 0.9285714285714286
+      }
+    },
+    {
+      "tokens": [
+        "My",
+        "brother",
+        "is",
+        "very",
+        "b",
+        "ored"
+      ],
+      "text": "My brother is very bored",
+      "probabilities": {
+        "base": [
+          0.8531299233436584,
+          0.9842149615287781,
+          0.9792909026145935,
+          0.9108245968818665,
+          0.9730907678604126,
+          0.9571653604507446
+        ],
+        "expert": [
+          0.9975952506065369,
+          0.9959421753883362,
+          0.997355580329895,
+          0.6700816750526428,
+          0.9995618462562561,
+          0.9968221187591553
+        ]
+      },
+      "predictions": {
+        "base": "My brother is very bored",
+        "expert": "My brother is very bored",
+        "dexperts": "My brother is very bored",
+        "antiexpert": "My brother is very bored"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.301194211912202,
+          "english": 0.301194211912202,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.47884615384615387,
+          "english": 0.47884615384615387,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.3684210526315789,
+          "english": 0.3684210526315789,
+          "spanish": null
+        },
+        "errant": 0.9090909090909091
+      }
+    },
+    {
+      "tokens": [
+        "El",
+        "per",
+        "ro",
+        "cor",
+        "ri\u00f3",
+        "r\u00e1",
+        "p",
+        "ido"
+      ],
+      "text": "El perro corri\u00f3 r\u00e1pido",
+      "probabilities": {
+        "base": [
+          0.12803371250629425,
+          0.9916008710861206,
+          0.9903833270072937,
+          0.827736496925354,
+          0.8384883999824524,
+          0.9263297915458679,
+          0.7769016623497009,
+          0.9980339407920837
+        ],
+        "expert": [
+          0.8934493064880371,
+          0.9983175992965698,
+          0.9910531640052795,
+          0.6813754439353943,
+          0.9876376390457153,
+          0.7437108159065247,
+          0.5811302661895752,
+          0.9991839528083801
+        ]
+      },
+      "predictions": {
+        "base": "The perro corri\u00f3 r\u00e1pido",
+        "expert": "El perro corri\u00f3 r\u00e1pido",
+        "dexperts": "El perro corri\u00f3 r\u00e1pido",
+        "antiexpert": "The perro corri\u00f3 r\u00e1pido"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.2865047968601901,
+          "english": null,
+          "spanish": 0.2865047968601901
+        },
+        "meteor": {
+          "overall": 0.46691176470588236,
+          "english": null,
+          "spanish": 0.46691176470588236
+        },
+        "gleu": {
+          "overall": 0.3333333333333333,
+          "english": null,
+          "spanish": 0.3333333333333333
+        },
+        "errant": 0.5555555555555556
+      }
+    },
+    {
+      "tokens": [
+        "We",
+        "are",
+        "the",
+        "best",
+        "players"
+      ],
+      "text": "We are the best players",
+      "probabilities": {
+        "base": [
+          0.8526819944381714,
+          0.9572848677635193,
+          0.9845069646835327,
+          0.9913316965103149,
+          0.989587664604187
+        ],
+        "expert": [
+          0.9909380674362183,
+          0.9601305723190308,
+          0.9949754476547241,
+          0.9975234866142273,
+          0.9909622073173523
+        ]
+      },
+      "predictions": {
+        "base": "We are the best players",
+        "expert": "We are the best players",
+        "dexperts": "We are the best players",
+        "antiexpert": "N are the best players"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.301194211912202,
+          "english": 0.301194211912202,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.47884615384615387,
+          "english": 0.47884615384615387,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.3684210526315789,
+          "english": 0.3684210526315789,
+          "spanish": null
+        },
+        "errant": 0.9090909090909091
+      }
+    },
+    {
+      "tokens": [
+        "T",
+        "iene",
+        "una",
+        "herm",
+        "osa",
+        "casa"
+      ],
+      "text": "Tiene una hermosa casa",
+      "probabilities": {
+        "base": [
+          0.003423488000407815,
+          0.9847395420074463,
+          0.916644811630249,
+          0.3087537884712219,
+          0.9953697323799133,
+          0.9891484379768372
+        ],
+        "expert": [
+          0.4896329343318939,
+          0.9986762404441833,
+          0.9946915507316589,
+          0.6188424229621887,
+          0.9973347783088684,
+          0.9961479902267456
+        ]
+      },
+      "predictions": {
+        "base": "Sheiene una casaosa casa",
+        "expert": "Tiene una hermosa casa",
+        "dexperts": "Tiene una hermosa casa",
+        "antiexpert": "Sheiene una hermosa casa"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 2.946173345580876e-232,
+          "english": 2.946173345580876e-232,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.30643203883495146,
+          "english": 0.30643203883495146,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.07894736842105263,
+          "english": 0.07894736842105263,
+          "spanish": null
+        },
+        "errant": 0.8181818181818181
+      }
+    },
+    {
+      "tokens": [
+        "The",
+        "birds",
+        "are",
+        "flying",
+        "in",
+        "the",
+        "sky"
+      ],
+      "text": "The birds are flying in the sky",
+      "probabilities": {
+        "base": [
+          0.5779648423194885,
+          0.9846081137657166,
+          0.9422938227653503,
+          0.9885357022285461,
+          0.992230236530304,
+          0.9955407977104187,
+          0.9934141039848328
+        ],
+        "expert": [
+          0.992066502571106,
+          0.9992839694023132,
+          0.990939736366272,
+          0.9989280104637146,
+          0.9982636570930481,
+          0.999962329864502,
+          0.9991127848625183
+        ]
+      },
+      "predictions": {
+        "base": "The birds are flying in the sky",
+        "expert": "The birds are flying in the sky",
+        "dexperts": "The birds are flying in the sky",
+        "antiexpert": "Los birds are flying in the sky"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.31890655732397044,
+          "english": null,
+          "spanish": 0.31890655732397044
+        },
+        "meteor": {
+          "overall": 0.4922391491807991,
+          "english": null,
+          "spanish": 0.4922391491807991
+        },
+        "gleu": {
+          "overall": 0.4074074074074074,
+          "english": null,
+          "spanish": 0.4074074074074074
+        },
+        "errant": 0.5333333333333333
+      }
+    },
+    {
+      "tokens": [
+        "N",
+        "os",
+        "lleg",
+        "amos",
+        "tarde",
+        "a",
+        "la",
+        "reun",
+        "i\u00f3n"
+      ],
+      "text": "Nos llegamos tarde a la reuni\u00f3n",
+      "probabilities": {
+        "base": [
+          0.4240448474884033,
+          0.9789856672286987,
+          0.09016620367765427,
+          0.865148663520813,
+          0.962091326713562,
+          0.9062771201133728,
+          0.9977307915687561,
+          0.979612410068512,
+          0.9976397752761841
+        ],
+        "expert": [
+          0.3259759843349457,
+          0.9756341576576233,
+          0.4980846345424652,
+          0.964783251285553,
+          0.9639551639556885,
+          0.6143603324890137,
+          0.9983887672424316,
+          0.9979099631309509,
+          0.9999295473098755
+        ]
+      },
+      "predictions": {
+        "base": "Nosotamos tarde a la reuni\u00f3n",
+        "expert": "Estos llegamos tarde a la reuni\u00f3n",
+        "dexperts": "Nos llegamos tarde a la reuni\u00f3n",
+        "antiexpert": "Weosotamos tarde a la reuni\u00f3n"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.18693159143202892,
+          "english": 0.18693159143202892,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.436842105263158,
+          "english": 0.436842105263158,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.23809523809523808,
+          "english": 0.23809523809523808,
+          "spanish": null
+        },
+        "errant": 0.8333333333333334
+      }
+    },
+    {
+      "tokens": [
+        "El",
+        "libro",
+        "est\u00e1",
+        "en",
+        "la",
+        "mes",
+        "a"
+      ],
+      "text": "El libro est\u00e1 en la mesa",
+      "probabilities": {
+        "base": [
+          0.20820929110050201,
+          0.9764125347137451,
+          0.7694239616394043,
+          0.7835215926170349,
+          0.991093099117279,
+          0.9931936860084534,
+          0.9991469383239746
+        ],
+        "expert": [
+          0.27138614654541016,
+          0.9991942048072815,
+          0.943375289440155,
+          0.598601222038269,
+          0.9947811961174011,
+          0.9993114471435547,
+          0.9978724718093872
+        ]
+      },
+      "predictions": {
+        "base": "The libro est\u00e1 en la mesa",
+        "expert": "The libro est\u00e1 en la mesa",
+        "dexperts": "El libro est\u00e1 en la mesa",
+        "antiexpert": "The libro est\u00e1 en la mesa"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.31140322391459774,
+          "english": 0.31140322391459774,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.4866757000903343,
+          "english": 0.4866757000903343,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.391304347826087,
+          "english": 0.391304347826087,
+          "spanish": null
+        },
+        "errant": 0.9230769230769231
+      }
+    },
+    {
+      "tokens": [
+        "The",
+        "k",
+        "ids",
+        "play",
+        "in",
+        "the",
+        "park",
+        "every",
+        "day"
+      ],
+      "text": "The kids play in the park every day",
+      "probabilities": {
+        "base": [
+          0.5934309959411621,
+          0.29277801513671875,
+          0.9994064569473267,
+          0.8920067548751831,
+          0.8636010885238647,
+          0.9936835765838623,
+          0.991027295589447,
+          0.9481420516967773,
+          0.8324952721595764
+        ],
+        "expert": [
+          0.9481005668640137,
+          0.21709585189819336,
+          0.999968409538269,
+          0.9780460596084595,
+          0.7537590265274048,
+          0.9997603297233582,
+          0.9995872378349304,
+          0.9954720735549927,
+          0.9302170276641846
+        ]
+      },
+      "predictions": {
+        "base": "The childrenids play in the park every day",
+        "expert": "The childrenids play in the park every day",
+        "dexperts": "The kids play in the park every day",
+        "antiexpert": "Los childrenids play in the park every day"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.20258948470231466,
+          "english": null,
+          "spanish": 0.20258948470231466
+        },
+        "meteor": {
+          "overall": 0.40696278511404566,
+          "english": null,
+          "spanish": 0.40696278511404566
+        },
+        "gleu": {
+          "overall": 0.2878787878787879,
+          "english": null,
+          "spanish": 0.2878787878787879
+        },
+        "errant": 0.5555555555555556
+      }
+    },
+    {
+      "tokens": [
+        "No",
+        "tiene",
+        "din",
+        "ero",
+        "\n",
+        "\n",
+        "##",
+        "#",
+        "Input",
+        ":",
+        "\n",
+        "\u00bf",
+        "P",
+        "ode",
+        "mos",
+        "ir",
+        "al",
+        "c",
+        "ine",
+        "esta",
+        "no",
+        "che",
+        "?",
+        "\n",
+        "\n",
+        "##",
+        "#",
+        "Response",
+        ":",
+        "\n",
+        "Can",
+        "we",
+        "go",
+        "to",
+        "the",
+        "mov",
+        "ies",
+        "ton",
+        "ight",
+        "?"
+      ],
+      "text": "No tiene dinero\n\n### Input:\n\u00bfPodemos ir al cine esta noche?\n\n### Response:\nCan we go to the movies tonight?",
+      "probabilities": {
+        "base": [
+          0.09162071347236633,
+          0.9103503227233887,
+          0.9411334991455078,
+          0.9996856451034546,
+          0.727005660533905,
+          0.8772639036178589,
+          0.706913411617279,
+          0.9911002516746521,
+          0.3108411133289337,
+          0.9761149883270264,
+          0.9879977703094482,
+          0.03186189755797386,
+          0.0772734209895134,
+          0.08263257890939713,
+          0.922580361366272,
+          0.13657574355602264,
+          0.35714295506477356,
+          0.24620531499385834,
+          0.9747154712677002,
+          0.2865738570690155,
+          0.7876394987106323,
+          0.9992601275444031,
+          0.9390498995780945,
+          0.9615165591239929,
+          0.984481930732727,
+          0.9934200644493103,
+          0.9996482133865356,
+          0.9781135320663452,
+          0.9965354204177856,
+          0.9918729662895203,
+          0.02066134288907051,
+          0.9616976976394653,
+          0.9841030836105347,
+          0.9760364890098572,
+          0.9844641089439392,
+          0.45624837279319763,
+          0.9993657469749451,
+          0.8327353596687317,
+          0.9986087679862976,
+          0.9595944881439209
+        ],
+        "expert": [
+          0.21102476119995117,
+          0.9769721031188965,
+          0.1522328108549118,
+          0.9999512434005737,
+          0.5989236235618591,
+          0.9952918291091919,
+          0.9981423616409302,
+          0.9999995231628418,
+          0.9973987340927124,
+          0.9999864101409912,
+          0.99997878074646,
+          0.027751123532652855,
+          0.08065568655729294,
+          0.047374945133924484,
+          0.9996727705001831,
+          0.2554854154586792,
+          0.27245715260505676,
+          0.5327889919281006,
+          0.992420494556427,
+          0.4571410119533539,
+          0.8671479225158691,
+          0.9999878406524658,
+          0.9599670767784119,
+          0.9803565144538879,
+          0.9999254941940308,
+          0.9999852180480957,
+          1.0,
+          0.9999275207519531,
+          0.9999966621398926,
+          0.9999920129776001,
+          0.48142802715301514,
+          0.9903433322906494,
+          0.9971165657043457,
+          0.9923322200775146,
+          0.9971094727516174,
+          0.5893236398696899,
+          0.99992835521698,
+          0.9297199249267578,
+          0.9995625615119934,
+          0.9987583160400391
+        ]
+      },
+      "predictions": {
+        "base": "She tiene dinero\n\n### Input:\nSheCormos ir al cine? noche?\n\n### Response:\n\u00bf we go to the movies tonight?",
+        "expert": "She tiene ningero\n\n### Input:\nIQuuedmos ir a cine esta noche?\n\n### Response:\nCan we go to the movies tonight?",
+        "dexperts": "No tiene dinero\n\n### Input:\n\u00bfPodemos ir al cine esta noche?\n\n### Response:\nCan we go to the movies tonight?",
+        "antiexpert": "She tiene ningero\n\n### Input:\nICuedmos ir a cine? noche?\n\n### Response:\n\u00bf we go to the movies tonight?"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.0,
+          "english": 0.0,
+          "spanish": 0.0
+        },
+        "meteor": {
+          "overall": 0.0,
+          "english": 0.0,
+          "spanish": 0.0
+        },
+        "gleu": {
+          "overall": 0.0,
+          "english": 0.0,
+          "spanish": 0.0
+        },
+        "errant": 0.0,
+        "is_hallucination": true
+      }
+    },
+    {
+      "tokens": [
+        "The",
+        "cat",
+        "is",
+        "very",
+        "happy",
+        "because",
+        "its",
+        "food",
+        "is",
+        "ready"
+      ],
+      "text": "The cat is very happy because its food is ready",
+      "probabilities": {
+        "base": [
+          0.8919274210929871,
+          0.9930204749107361,
+          0.9912200570106506,
+          0.9679398536682129,
+          0.9951058626174927,
+          0.9671716690063477,
+          0.28271517157554626,
+          0.866983950138092,
+          0.9916859269142151,
+          0.9804705381393433
+        ],
+        "expert": [
+          0.9958515167236328,
+          0.9983794689178467,
+          0.9987433552742004,
+          0.9732968211174011,
+          0.9953345656394958,
+          0.9912658333778381,
+          0.75636887550354,
+          0.9010664820671082,
+          0.9990033507347107,
+          0.9979596138000488
+        ]
+      },
+      "predictions": {
+        "base": "The cat is very happy because his food is ready",
+        "expert": "The cat is very happy because its food is ready",
+        "dexperts": "The cat is very happy because its food is ready",
+        "antiexpert": "El cat is very happy because his food is ready"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.33287108369807955,
+          "english": 0.33287108369807955,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.5022613065326633,
+          "english": 0.5022613065326633,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.4358974358974359,
+          "english": 0.4358974358974359,
+          "spanish": null
+        },
+        "errant": 0.9523809523809523
+      }
+    },
+    {
+      "tokens": [
+        "No",
+        "me",
+        "g",
+        "usta",
+        "el",
+        "hel",
+        "ado"
+      ],
+      "text": "No me gusta el helado",
+      "probabilities": {
+        "base": [
+          0.09841939061880112,
+          0.9615932703018188,
+          0.9932652711868286,
+          0.777172863483429,
+          0.7371880412101746,
+          0.9889905452728271,
+          0.999000608921051
+        ],
+        "expert": [
+          0.3603787422180176,
+          0.9337522387504578,
+          0.977403998374939,
+          0.8031023740768433,
+          0.2710997462272644,
+          0.9959582686424255,
+          0.9981076717376709
+        ]
+      },
+      "predictions": {
+        "base": "I me gusta el helado",
+        "expert": "I me gusta hel helado",
+        "dexperts": "No me gusta el helado",
+        "antiexpert": "I me gusta hel helado"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.301194211912202,
+          "english": 0.301194211912202,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.47884615384615387,
+          "english": 0.47884615384615387,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.3684210526315789,
+          "english": 0.3684210526315789,
+          "spanish": null
+        },
+        "errant": 0.9090909090909091
+      }
+    },
+    {
+      "tokens": [
+        "We",
+        "are",
+        "going",
+        "to",
+        "the",
+        "beach",
+        "next",
+        "week"
+      ],
+      "text": "We are going to the beach next week",
+      "probabilities": {
+        "base": [
+          0.8791584372520447,
+          0.19547416269779205,
+          0.9903331398963928,
+          0.9966448545455933,
+          0.9908122420310974,
+          0.9963887929916382,
+          0.9710211753845215,
+          0.9989271759986877
+        ],
+        "expert": [
+          0.9838449358940125,
+          0.6673393249511719,
+          0.9856627583503723,
+          0.9989960789680481,
+          0.9979135394096375,
+          0.9998674392700195,
+          0.9679874181747437,
+          0.999969482421875
+        ]
+      },
+      "predictions": {
+        "base": "We will going to the beach next week",
+        "expert": "We are going to the beach next week",
+        "dexperts": "We are going to the beach next week",
+        "antiexpert": "N will going to the beach next week"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.17566369369221596,
+          "english": 0.17566369369221596,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.4297122575738371,
+          "english": 0.4297122575738371,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.24193548387096775,
+          "english": 0.24193548387096775,
+          "spanish": null
+        },
+        "errant": 0.8235294117647058
+      }
+    },
+    {
+      "tokens": [
+        "No",
+        "s",
+        "aben",
+        "la",
+        "res",
+        "puesta"
+      ],
+      "text": "No saben la respuesta",
+      "probabilities": {
+        "base": [
+          0.07658316940069199,
+          0.5229657888412476,
+          0.9747985005378723,
+          0.9765116572380066,
+          0.9901976585388184,
+          0.9951587319374084
+        ],
+        "expert": [
+          0.38720500469207764,
+          0.5930418372154236,
+          0.9947311878204346,
+          0.9784868359565735,
+          0.9973918199539185,
+          0.9999518394470215
+        ]
+      },
+      "predictions": {
+        "base": "They saben la respuesta",
+        "expert": "They saben la respuesta",
+        "dexperts": "No saben la respuesta",
+        "antiexpert": "They saben la respuesta"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 1.5007410661215036e-78,
+          "english": 1.5007410661215036e-78,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.3853155339805825,
+          "english": 0.3853155339805825,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.15789473684210525,
+          "english": 0.15789473684210525,
+          "spanish": null
+        },
+        "errant": 0.9090909090909091
+      }
+    },
+    {
+      "tokens": [
+        "They",
+        "have",
+        "a",
+        "lot",
+        "of",
+        "money",
+        "in",
+        "the",
+        "bank"
+      ],
+      "text": "They have a lot of money in the bank",
+      "probabilities": {
+        "base": [
+          0.870552122592926,
+          0.9861401319503784,
+          0.6641770601272583,
+          0.9934333562850952,
+          0.9954268932342529,
+          0.9975283741950989,
+          0.8703551888465881,
+          0.9711002707481384,
+          0.9868608117103577
+        ],
+        "expert": [
+          0.9965918064117432,
+          0.9963558912277222,
+          0.9316036105155945,
+          0.9994937181472778,
+          0.9995682835578918,
+          0.99888676404953,
+          0.9670217633247375,
+          0.9966356158256531,
+          0.9992637038230896
+        ]
+      },
+      "predictions": {
+        "base": "They have a lot of money in the bank",
+        "expert": "They have a lot of money in the bank",
+        "dexperts": "They have a lot of money in the bank",
+        "antiexpert": "E have a lot of money in the bank"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.41111229050718745,
+          "english": 0.41111229050718745,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.5551745160798659,
+          "english": 0.5551745160798659,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.4838709677419355,
+          "english": 0.4838709677419355,
+          "spanish": null
+        },
+        "errant": 0.9411764705882353
+      }
+    },
+    {
+      "tokens": [
+        "L",
+        "as",
+        "fl",
+        "ores",
+        "son",
+        "herm",
+        "osas"
+      ],
+      "text": "Las flores son hermosas",
+      "probabilities": {
+        "base": [
+          0.15886151790618896,
+          0.9965785145759583,
+          0.9708899855613708,
+          0.9970453381538391,
+          0.7153043746948242,
+          0.40505337715148926,
+          0.9680744409561157
+        ],
+        "expert": [
+          0.11720169335603714,
+          0.9999830722808838,
+          0.9963011741638184,
+          0.999744713306427,
+          0.9293193221092224,
+          0.8095993399620056,
+          0.9695614576339722
+        ]
+      },
+      "predictions": {
+        "base": "Theas flores son bellosas",
+        "expert": "Losas flores son hermosas",
+        "dexperts": "Las flores son hermosas",
+        "antiexpert": "Theas flores son hermosas"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.2865047968601901,
+          "english": 0.2865047968601901,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.46691176470588236,
+          "english": 0.46691176470588236,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.3333333333333333,
+          "english": 0.3333333333333333,
+          "spanish": null
+        },
+        "errant": 0.8888888888888888
+      }
+    },
+    {
+      "tokens": [
+        "I",
+        "bi",
+        "ke",
+        "to",
+        "school",
+        "every",
+        "day"
+      ],
+      "text": "I bike to school every day",
+      "probabilities": {
+        "base": [
+          0.9003247022628784,
+          0.039478152990341187,
+          0.9986454844474792,
+          0.9844563603401184,
+          0.9816899299621582,
+          0.9696707129478455,
+          0.8383481502532959
+        ],
+        "expert": [
+          0.9958695769309998,
+          0.17471082508563995,
+          0.9999871253967285,
+          0.9991492033004761,
+          0.9994901418685913,
+          0.9994322657585144,
+          0.9406465888023376
+        ]
+      },
+      "predictions": {
+        "base": "I goke to school every day",
+        "expert": "I rideke to school every day",
+        "dexperts": "I bike to school every day",
+        "antiexpert": "V amke to school every day"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 1.6054554165729138e-155,
+          "english": null,
+          "spanish": 1.6054554165729138e-155
+        },
+        "meteor": {
+          "overall": 0.3042328042328042,
+          "english": null,
+          "spanish": 0.3042328042328042
+        },
+        "gleu": {
+          "overall": 0.12121212121212122,
+          "english": null,
+          "spanish": 0.12121212121212122
+        },
+        "errant": 0.6666666666666667
+      }
+    },
+    {
+      "tokens": [
+        "No",
+        "la",
+        "vio",
+        "en",
+        "el",
+        "par",
+        "que",
+        "\n",
+        "\n",
+        "##",
+        "#",
+        "Input",
+        ":",
+        "\n",
+        "I",
+        "'",
+        "m",
+        "going",
+        "to",
+        "the",
+        "mov",
+        "ies",
+        "with",
+        "my",
+        "friends",
+        "\n",
+        "\n",
+        "##",
+        "#",
+        "Response",
+        ":",
+        "\n",
+        "V",
+        "oy",
+        "al",
+        "c",
+        "ine",
+        "con",
+        "mis",
+        "am",
+        "igos"
+      ],
+      "text": "No la vio en el parque\n\n### Input:\nI'm going to the movies with my friends\n\n### Response:\nVoy al cine con mis amigos",
+      "probabilities": {
+        "base": [
+          0.11530572175979614,
+          0.5362855195999146,
+          0.8373939394950867,
+          0.9418375492095947,
+          0.9968317151069641,
+          0.9887260794639587,
+          0.9983566403388977,
+          0.8105916380882263,
+          0.8843387365341187,
+          0.6962940096855164,
+          0.9907665252685547,
+          0.22507141530513763,
+          0.9731969237327576,
+          0.9862833023071289,
+          0.10968579351902008,
+          0.061637673527002335,
+          0.6329924464225769,
+          0.14153467118740082,
+          0.8013776540756226,
+          0.3237890601158142,
+          0.058743204921483994,
+          0.9947839379310608,
+          0.18047474324703217,
+          0.5193979740142822,
+          0.35156765580177307,
+          0.5509898066520691,
+          0.9890930652618408,
+          0.9966633915901184,
+          0.9996163845062256,
+          0.9804830551147461,
+          0.9958086013793945,
+          0.9943816065788269,
+          0.8652650713920593,
+          0.997577965259552,
+          0.7335207462310791,
+          0.9778618216514587,
+          0.9992069602012634,
+          0.9792925119400024,
+          0.96087646484375,
+          0.9976745247840881,
+          0.9726243615150452
+        ],
+        "expert": [
+          0.4633514881134033,
+          0.8117420673370361,
+          0.6109239459037781,
+          0.7972962856292725,
+          0.9969466328620911,
+          0.993831992149353,
+          0.9997244477272034,
+          0.46346789598464966,
+          0.997343122959137,
+          0.9986442923545837,
+          0.9999995231628418,
+          0.9980289340019226,
+          0.9999878406524658,
+          0.9999754428863525,
+          0.18120510876178741,
+          0.09921733289957047,
+          0.6454513072967529,
+          0.2225188910961151,
+          0.9280481934547424,
+          0.3734740912914276,
+          0.15662781894207,
+          0.9996695518493652,
+          0.5281581878662109,
+          0.7620740532875061,
+          0.6727253198623657,
+          0.30745798349380493,
+          0.9998646974563599,
+          0.9999713897705078,
+          1.0,
+          0.9999371767044067,
+          0.9999966621398926,
+          0.9998866319656372,
+          0.9341307282447815,
+          0.9946460723876953,
+          0.6411171555519104,
+          0.9900913238525391,
+          0.9998306035995483,
+          0.9844026565551758,
+          0.9963243007659912,
+          0.999134361743927,
+          0.957622230052948
+        ]
+      },
+      "predictions": {
+        "base": "He la vio en el parque\n\n### Ex:\nI didnm going to the parkies\n my friends\n\n### Response:\nVoy al cine con mis amigos",
+        "expert": "No la vio en el parque</s>\n### Input:\nI'm going to the storeies with my friends ton\n### Response:\nVoy al cine con mis amigos",
+        "dexperts": "No la vio en el parque\n\n### Input:\nI'm going to the movies with my friends\n\n### Response:\nVoy al cine con mis amigos",
+        "antiexpert": "He la vio en el parque\n\n### Input:\nHe sawm going to the storeies with my friends\n\n### Response:\nVoy al cine con mis amigos"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.0,
+          "english": 0.0,
+          "spanish": 0.0
+        },
+        "meteor": {
+          "overall": 0.0,
+          "english": 0.0,
+          "spanish": 0.0
+        },
+        "gleu": {
+          "overall": 0.0,
+          "english": 0.0,
+          "spanish": 0.0
+        },
+        "errant": 0.0,
+        "is_hallucination": true
+      }
+    },
+    {
+      "tokens": [
+        "We",
+        "like",
+        "ice",
+        "cre",
+        "am",
+        "and",
+        "p",
+        "izza",
+        "a",
+        "lot"
+      ],
+      "text": "We like ice cream and pizza a lot",
+      "probabilities": {
+        "base": [
+          0.891297459602356,
+          0.8884827494621277,
+          0.7907853722572327,
+          0.9486674666404724,
+          0.9982113838195801,
+          0.9911778569221497,
+          0.9806283712387085,
+          0.9960784316062927,
+          0.660015881061554,
+          0.9969609379768372
+        ],
+        "expert": [
+          0.995314359664917,
+          0.9192714095115662,
+          0.9945079684257507,
+          0.9959062337875366,
+          0.9998645782470703,
+          0.9984018206596375,
+          0.9995902180671692,
+          0.9999016523361206,
+          0.9686254262924194,
+          0.9999523162841797
+        ]
+      },
+      "predictions": {
+        "base": "We like ice cream and pizza a lot",
+        "expert": "We like ice cream and pizza a lot",
+        "dexperts": "We like ice cream and pizza a lot",
+        "antiexpert": "N like ice cream and pizza a lot"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.32465246735834974,
+          "english": null,
+          "spanish": 0.32465246735834974
+        },
+        "meteor": {
+          "overall": 0.4964091614906832,
+          "english": null,
+          "spanish": 0.4964091614906832
+        },
+        "gleu": {
+          "overall": 0.41935483870967744,
+          "english": null,
+          "spanish": 0.41935483870967744
+        },
+        "errant": 0.5294117647058824
+      }
+    },
+    {
+      "tokens": [
+        "E",
+        "ll",
+        "os",
+        "estab",
+        "an",
+        "muy",
+        "can",
+        "s",
+        "ados",
+        "despu\u00e9s",
+        "de",
+        "la",
+        "carrera"
+      ],
+      "text": "Ellos estaban muy cansados despu\u00e9s de la carrera",
+      "probabilities": {
+        "base": [
+          0.3284827172756195,
+          0.7103561758995056,
+          0.9933085441589355,
+          0.6809311509132385,
+          0.9972315430641174,
+          0.9717156887054443,
+          0.9722819924354553,
+          0.99774169921875,
+          0.8976345062255859,
+          0.902514636516571,
+          0.9637988209724426,
+          0.9910826683044434,
+          0.9840750694274902
+        ],
+        "expert": [
+          0.37530145049095154,
+          0.9897107481956482,
+          0.9997674822807312,
+          0.8532570600509644,
+          0.9999836683273315,
+          0.9772889018058777,
+          0.925725519657135,
+          0.9998456239700317,
+          0.9995211362838745,
+          0.7616331577301025,
+          0.9698627591133118,
+          0.9937916398048401,
+          0.9723327159881592
+        ]
+      },
+      "predictions": {
+        "base": "Theyllos estaban muy cansados despu\u00e9s de la carrera",
+        "expert": "Theyllos estaban muy cansados despu\u00e9s de la carrera",
+        "dexperts": "Ellos estaban muy cansados despu\u00e9s de la carrera",
+        "antiexpert": "Theyllos estaban muy cansados despu\u00e9s de la carrera"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.2836224688412052,
+          "english": null,
+          "spanish": 0.2836224688412052
+        },
+        "meteor": {
+          "overall": 0.48879691736834596,
+          "english": null,
+          "spanish": 0.48879691736834596
+        },
+        "gleu": {
+          "overall": 0.3333333333333333,
+          "english": null,
+          "spanish": 0.3333333333333333
+        },
+        "errant": 0.4666666666666667
+      }
+    },
+    {
+      "tokens": [
+        "They",
+        "cannot",
+        "find",
+        "their",
+        "books"
+      ],
+      "text": "They cannot find their books",
+      "probabilities": {
+        "base": [
+          0.7107142806053162,
+          0.6275669932365417,
+          0.9872274398803711,
+          0.9884479641914368,
+          0.9904009699821472
+        ],
+        "expert": [
+          0.9830777049064636,
+          0.8509263396263123,
+          0.9973788261413574,
+          0.9994176626205444,
+          0.9914934635162354
+        ]
+      },
+      "predictions": {
+        "base": "They cannot find their books",
+        "expert": "They cannot find their books",
+        "dexperts": "They cannot find their books",
+        "antiexpert": "E cannot find their books"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 1.819946063725604e-78,
+          "english": 1.819946063725604e-78,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.331858407079646,
+          "english": 0.331858407079646,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.16666666666666666,
+          "english": 0.16666666666666666,
+          "spanish": null
+        },
+        "errant": 0.8333333333333334
+      }
+    },
+    {
+      "tokens": [
+        "He",
+        "id",
+        "o",
+        "a",
+        "ese",
+        "restaur",
+        "ante",
+        "antes"
+      ],
+      "text": "He ido a ese restaurante antes",
+      "probabilities": {
+        "base": [
+          0.002912749769166112,
+          0.6422886848449707,
+          0.997532844543457,
+          0.7397841215133667,
+          0.9031521081924438,
+          0.9235262870788574,
+          0.9964291453361511,
+          0.9298883080482483
+        ],
+        "expert": [
+          0.8329930901527405,
+          0.9058122634887695,
+          0.999886155128479,
+          0.7428929209709167,
+          0.8847528696060181,
+          0.974665105342865,
+          0.99725741147995,
+          0.9875703454017639
+        ]
+      },
+      "predictions": {
+        "base": "I ido a ese restaurante antes",
+        "expert": "He ido a ese restaurante antes",
+        "dexperts": "He ido a ese restaurante antes",
+        "antiexpert": "I ido a ese restaurante antes"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.2635971381157267,
+          "english": 0.2635971381157267,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.453493265993266,
+          "english": 0.453493265993266,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.36,
+          "english": 0.36,
+          "spanish": null
+        },
+        "errant": 0.9285714285714286
+      }
+    },
+    {
+      "tokens": [
+        "The",
+        "train",
+        "is",
+        "late",
+        "today"
+      ],
+      "text": "The train is late today",
+      "probabilities": {
+        "base": [
+          0.8188974857330322,
+          0.9910695552825928,
+          0.29803305864334106,
+          0.7558990716934204,
+          0.9852440357208252
+        ],
+        "expert": [
+          0.9975906610488892,
+          0.9993658661842346,
+          0.6046457290649414,
+          0.5589878559112549,
+          0.9970951080322266
+        ]
+      },
+      "predictions": {
+        "base": "The train arriv late today",
+        "expert": "The train is late today",
+        "dexperts": "The train is late today",
+        "antiexpert": "El train arriv late today"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.301194211912202,
+          "english": 0.301194211912202,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.47884615384615387,
+          "english": 0.47884615384615387,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.3684210526315789,
+          "english": 0.3684210526315789,
+          "spanish": null
+        },
+        "errant": 0.9090909090909091
+      }
+    },
+    {
+      "tokens": [
+        "Los",
+        "ni",
+        "\u00f1os",
+        "han",
+        "jug",
+        "ado",
+        "todo",
+        "el",
+        "d\u00eda"
+      ],
+      "text": "Los ni\u00f1os han jugado todo el d\u00eda",
+      "probabilities": {
+        "base": [
+          0.41630205512046814,
+          0.9434672594070435,
+          0.9933498501777649,
+          0.7205159068107605,
+          0.963448703289032,
+          0.9916856288909912,
+          0.7701286673545837,
+          0.9970781803131104,
+          0.9951137900352478
+        ],
+        "expert": [
+          0.5538154244422913,
+          0.9764533042907715,
+          0.999821126461029,
+          0.724270761013031,
+          0.9899657964706421,
+          0.9984861016273499,
+          0.8196668028831482,
+          0.9994636178016663,
+          0.9989901185035706
+        ]
+      },
+      "predictions": {
+        "base": "The ni\u00f1os han jugado todo el d\u00eda",
+        "expert": "Los ni\u00f1os han jugado todo el d\u00eda",
+        "dexperts": "Los ni\u00f1os han jugado todo el d\u00eda",
+        "antiexpert": "The ni\u00f1os han jugado todo el d\u00eda"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.36787944117144233,
+          "english": null,
+          "spanish": 0.36787944117144233
+        },
+        "meteor": {
+          "overall": 0.5255485652907779,
+          "english": null,
+          "spanish": 0.5255485652907779
+        },
+        "gleu": {
+          "overall": 0.44,
+          "english": null,
+          "spanish": 0.44
+        },
+        "errant": 0.5
+      }
+    },
+    {
+      "tokens": [
+        "We",
+        "made",
+        "a",
+        "del",
+        "icious",
+        "c",
+        "ake",
+        "yesterday"
+      ],
+      "text": "We made a delicious cake yesterday",
+      "probabilities": {
+        "base": [
+          0.17738904058933258,
+          0.8964911103248596,
+          0.9493887424468994,
+          0.9266183972358704,
+          0.9979401230812073,
+          0.9070177674293518,
+          0.999936580657959,
+          0.9662216901779175
+        ],
+        "expert": [
+          0.5283381342887878,
+          0.9730036854743958,
+          0.982130229473114,
+          0.9880490899085999,
+          0.999782383441925,
+          0.7894997000694275,
+          0.9981514811515808,
+          0.9940770864486694
+        ]
+      },
+      "predictions": {
+        "base": "Y made a delicious cake yesterday",
+        "expert": "We made a delicious cake yesterday",
+        "dexperts": "We made a delicious cake yesterday",
+        "antiexpert": "Y made a delicious cake yesterday"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.18693159143202892,
+          "english": null,
+          "spanish": 0.18693159143202892
+        },
+        "meteor": {
+          "overall": 0.5165692007797271,
+          "english": null,
+          "spanish": 0.5165692007797271
+        },
+        "gleu": {
+          "overall": 0.23809523809523808,
+          "english": null,
+          "spanish": 0.23809523809523808
+        },
+        "errant": 0.5
+      }
+    },
+    {
+      "tokens": [
+        "Does",
+        "he",
+        "do",
+        "his",
+        "home",
+        "work",
+        "every",
+        "night",
+        "?"
+      ],
+      "text": "Does he do his homework every night?",
+      "probabilities": {
+        "base": [
+          0.03743394836783409,
+          0.49705415964126587,
+          0.9575380682945251,
+          0.9782049059867859,
+          0.9972109198570251,
+          0.999281108379364,
+          0.9874829053878784,
+          0.9973796606063843,
+          0.801175594329834
+        ],
+        "expert": [
+          0.0018597261514514685,
+          0.9410709142684937,
+          0.9908893704414368,
+          0.9989521503448486,
+          0.9998956918716431,
+          0.9999791383743286,
+          0.9995841383934021,
+          0.9994296431541443,
+          0.407783567905426
+        ]
+      },
+      "predictions": {
+        "base": "He he do his homework every night?",
+        "expert": "\u00c9 he do his homework every night</s>",
+        "dexperts": "Does he do his homework every night?",
+        "antiexpert": "He he do his homework every night?"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 1.8472454897794203e-78,
+          "english": 1.8472454897794203e-78,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.33533834586466166,
+          "english": 0.33533834586466166,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.12,
+          "english": 0.12,
+          "spanish": null
+        },
+        "errant": 0.7142857142857143
+      }
+    },
+    {
+      "tokens": [
+        "They",
+        "are",
+        "visit",
+        "ing",
+        "their",
+        "grand",
+        "m",
+        "other",
+        "at",
+        "this",
+        "moment"
+      ],
+      "text": "They are visiting their grandmother at this moment",
+      "probabilities": {
+        "base": [
+          0.8842334747314453,
+          0.9664917588233948,
+          0.9768103361129761,
+          0.9989462494850159,
+          0.9296021461486816,
+          0.9745708703994751,
+          0.8439509272575378,
+          0.9992708563804626,
+          0.4788646996021271,
+          0.8139553666114807,
+          0.7808613777160645
+        ],
+        "expert": [
+          0.9965640902519226,
+          0.9812771677970886,
+          0.9975290894508362,
+          0.9999009370803833,
+          0.9954930543899536,
+          0.9989438652992249,
+          0.8796674013137817,
+          0.9999493360519409,
+          0.85590660572052,
+          0.7379761338233948,
+          0.9141703248023987
+        ]
+      },
+      "predictions": {
+        "base": "They are visiting their grandmother at this moment",
+        "expert": "They are visiting their grandmother at this moment",
+        "dexperts": "They are visiting their grandmother at this moment",
+        "antiexpert": "E are visiting their grandmother at this moment"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.16783660999022343,
+          "english": 0.16783660999022343,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.3093167701863354,
+          "english": 0.3093167701863354,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.22580645161290322,
+          "english": 0.22580645161290322,
+          "spanish": null
+        },
+        "errant": 0.8823529411764706
+      }
+    },
+    {
+      "tokens": [
+        "No",
+        "qu",
+        "iero",
+        "comer",
+        "es",
+        "o"
+      ],
+      "text": "No quiero comer eso",
+      "probabilities": {
+        "base": [
+          0.19101843237876892,
+          0.7208418250083923,
+          0.9928941130638123,
+          0.9721518754959106,
+          0.7670258283615112,
+          0.9995630383491516
+        ],
+        "expert": [
+          0.2355634570121765,
+          0.8466536402702332,
+          0.9986822009086609,
+          0.9537516236305237,
+          0.5600799918174744,
+          0.999422550201416
+        ]
+      },
+      "predictions": {
+        "base": "I quiero comer eso",
+        "expert": "I quiero comer eso",
+        "dexperts": "No quiero comer eso",
+        "antiexpert": "I quiero comer eso"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.17377394345044514,
+          "english": 0.17377394345044514,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.3853155339805825,
+          "english": 0.3853155339805825,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.2631578947368421,
+          "english": 0.2631578947368421,
+          "spanish": null
+        },
+        "errant": 0.9090909090909091
+      }
+    },
+    {
+      "tokens": [
+        "She",
+        "doesn",
+        "\u2019",
+        "t",
+        "know",
+        "where",
+        "her",
+        "phone",
+        "is",
+        "\n",
+        "\n",
+        "##",
+        "#",
+        "Input",
+        ":",
+        "\n",
+        "\u00bf",
+        "Qu",
+        "\u00e9",
+        "h",
+        "ic",
+        "iste",
+        "durante",
+        "el",
+        "fin",
+        "de",
+        "sem",
+        "ana",
+        "?",
+        "\n",
+        "\n",
+        "##",
+        "#",
+        "Response",
+        ":",
+        "\n",
+        "What",
+        "did",
+        "you",
+        "do",
+        "during",
+        "the",
+        "week",
+        "end",
+        "?"
+      ],
+      "text": "She doesn\u2019t know where her phone is\n\n### Input:\n\u00bfQu\u00e9 hiciste durante el fin de semana?\n\n### Response:\nWhat did you do during the weekend?",
+      "probabilities": {
+        "base": [
+          0.8461800813674927,
+          0.5362713932991028,
+          0.14376330375671387,
+          0.9996637105941772,
+          0.9944883584976196,
+          0.9926789999008179,
+          0.802009642124176,
+          0.8355183005332947,
+          0.9948514103889465,
+          0.799201250076294,
+          0.8612956404685974,
+          0.5300804376602173,
+          0.9851159453392029,
+          0.26060816645622253,
+          0.971569299697876,
+          0.9807759523391724,
+          0.18343713879585266,
+          0.09455887228250504,
+          0.8320215940475464,
+          0.11028137803077698,
+          0.030870983377099037,
+          0.8636524677276611,
+          0.04859049245715141,
+          0.5455136895179749,
+          0.5251477360725403,
+          0.9829905033111572,
+          0.9965046644210815,
+          0.9988202452659607,
+          0.8244526386260986,
+          0.9690190553665161,
+          0.9902895092964172,
+          0.9942980408668518,
+          0.9996089339256287,
+          0.9844784736633301,
+          0.9962247610092163,
+          0.990136444568634,
+          0.9309474229812622,
+          0.9948478937149048,
+          0.9981147050857544,
+          0.997836172580719,
+          0.7065714001655579,
+          0.9950577020645142,
+          0.9952972531318665,
+          0.9979109168052673,
+          0.9641615152359009
+        ],
+        "expert": [
+          0.9974894523620605,
+          0.72543865442276,
+          0.6147928237915039,
+          0.9999649524688721,
+          0.9997552037239075,
+          0.9996479749679565,
+          0.9767285585403442,
+          0.9715127944946289,
+          0.9998281002044678,
+          0.45315027236938477,
+          0.9965489506721497,
+          0.9923858642578125,
+          0.9999995231628418,
+          0.9885176420211792,
+          0.9999866485595703,
+          0.9999589920043945,
+          0.2739007771015167,
+          0.3241070508956909,
+          0.5564512014389038,
+          0.0792631283402443,
+          0.92747563123703,
+          0.9397831559181213,
+          0.10852649062871933,
+          0.22588101029396057,
+          0.5859308838844299,
+          0.9876924157142639,
+          0.9968365430831909,
+          0.9997995495796204,
+          0.9062673449516296,
+          0.9875577688217163,
+          0.9997909665107727,
+          0.999970555305481,
+          1.0,
+          0.9999260902404785,
+          0.9999948740005493,
+          0.9999816417694092,
+          0.9589622020721436,
+          0.9992188215255737,
+          0.9997323155403137,
+          0.9998218417167664,
+          0.8837185502052307,
+          0.9908351898193359,
+          0.9991911053657532,
+          0.999943733215332,
+          0.9957740902900696
+        ]
+      },
+      "predictions": {
+        "base": "She doesn't know where her phone is\n\n### Input:\n\u00bfD\u00e9 horaiste a el fin de semana?\n\n### Response:\nWhat did you do during the weekend?",
+        "expert": "She doesn\u2019t know where her phone is</s>\n### Input:\n\u00bfQu\u00e9 hiciste ano tu fin de semana?\n\n### Response:\nWhat did you do during the weekend?",
+        "dexperts": "She doesn\u2019t know where her phone is\n\n### Input:\n\u00bfQu\u00e9 hiciste durante el fin de semana?\n\n### Response:\nWhat did you do during the weekend?",
+        "antiexpert": "El does't know where her phone is\n\n### Input:\nElC\u00e9 horaiste ano el fin de semana?\n\n### Response:\nWhat did you do during the weekend?"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.0,
+          "english": 0.0,
+          "spanish": 0.0
+        },
+        "meteor": {
+          "overall": 0.0,
+          "english": 0.0,
+          "spanish": 0.0
+        },
+        "gleu": {
+          "overall": 0.0,
+          "english": 0.0,
+          "spanish": 0.0
+        },
+        "errant": 0.0,
+        "is_hallucination": true
+      }
+    },
+    {
+      "tokens": [
+        "El",
+        "co",
+        "che",
+        "no",
+        "func",
+        "iona",
+        "bien"
+      ],
+      "text": "El coche no funciona bien",
+      "probabilities": {
+        "base": [
+          0.16321665048599243,
+          0.6240585446357727,
+          0.998823344707489,
+          0.9611600637435913,
+          0.8575097322463989,
+          0.9992927312850952,
+          0.3275701403617859
+        ],
+        "expert": [
+          0.4653315544128418,
+          0.5299602150917053,
+          0.9997336268424988,
+          0.9979429841041565,
+          0.90499347448349,
+          0.9998767375946045,
+          0.4943792223930359
+        ]
+      },
+      "predictions": {
+        "base": "The coche no funciona correct",
+        "expert": "El coche no funciona bien",
+        "dexperts": "El coche no funciona bien",
+        "antiexpert": "The coche no funciona correct"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.20142070913129906,
+          "english": 0.20142070913129906,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.3816105769230769,
+          "english": 0.3816105769230769,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.2631578947368421,
+          "english": 0.2631578947368421,
+          "spanish": null
+        },
+        "errant": 0.8181818181818181
+      }
+    },
+    {
+      "tokens": [
+        "The",
+        "students",
+        "are",
+        "studying",
+        "for",
+        "the",
+        "final",
+        "exam"
+      ],
+      "text": "The students are studying for the final exam",
+      "probabilities": {
+        "base": [
+          0.6235761046409607,
+          0.987078070640564,
+          0.9846677184104919,
+          0.9779260754585266,
+          0.9886018633842468,
+          0.974296510219574,
+          0.9901347756385803,
+          0.9635207056999207
+        ],
+        "expert": [
+          0.93406081199646,
+          0.9998921155929565,
+          0.9996389150619507,
+          0.9945992231369019,
+          0.997803270816803,
+          0.9912841320037842,
+          0.982543408870697,
+          0.9983875751495361
+        ]
+      },
+      "predictions": {
+        "base": "The students are studying for the final exam",
+        "expert": "The students are studying for the final exam",
+        "dexperts": "The students are studying for the final exam",
+        "antiexpert": "Los students are studying for the final exam"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.32465246735834974,
+          "english": 0.32465246735834974,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.4964091614906832,
+          "english": 0.4964091614906832,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.41935483870967744,
+          "english": 0.41935483870967744,
+          "spanish": null
+        },
+        "errant": 0.9411764705882353
+      }
+    },
+    {
+      "tokens": [
+        "Ha",
+        "esc",
+        "rito",
+        "una",
+        "cart",
+        "a",
+        "a",
+        "su",
+        "am",
+        "igo"
+      ],
+      "text": "Ha escrito una carta a su amigo",
+      "probabilities": {
+        "base": [
+          0.004431307315826416,
+          0.972724974155426,
+          0.9998804330825806,
+          0.851051926612854,
+          0.9941287040710449,
+          0.9997139573097229,
+          0.9196983575820923,
+          0.9743102788925171,
+          0.9896976351737976,
+          0.9890318512916565
+        ],
+        "expert": [
+          0.3829377293586731,
+          0.9951668977737427,
+          0.999995231628418,
+          0.9938105940818787,
+          0.9967328310012817,
+          0.9998499155044556,
+          0.9922276139259338,
+          0.9977701902389526,
+          0.9991078972816467,
+          0.9795781970024109
+        ]
+      },
+      "predictions": {
+        "base": "He escrito una carta a su amigo",
+        "expert": "Ha escrito una carta a su amigo",
+        "dexperts": "Ha escrito una carta a su amigo",
+        "antiexpert": "He escrito una carta a su amigo"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.1939032620198005,
+          "english": 0.1939032620198005,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.43686224489795916,
+          "english": 0.43686224489795916,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.2903225806451613,
+          "english": 0.2903225806451613,
+          "spanish": null
+        },
+        "errant": 0.9411764705882353
+      }
+    },
+    {
+      "tokens": [
+        "She",
+        "has",
+        "a",
+        "small",
+        "house",
+        "near",
+        "the",
+        "river"
+      ],
+      "text": "She has a small house near the river",
+      "probabilities": {
+        "base": [
+          0.9289690256118774,
+          0.9866679906845093,
+          0.9948727488517761,
+          0.9681583642959595,
+          0.9940965175628662,
+          0.9208422899246216,
+          0.9786404967308044,
+          0.997007429599762
+        ],
+        "expert": [
+          0.9977601766586304,
+          0.990154504776001,
+          0.999221682548523,
+          0.9873494505882263,
+          0.9975185394287109,
+          0.8518426418304443,
+          0.999627947807312,
+          0.9998860359191895
+        ]
+      },
+      "predictions": {
+        "base": "She has a small house near the river",
+        "expert": "She has a small house near the river",
+        "dexperts": "She has a small house near the river",
+        "antiexpert": "El has a small house near the river"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.32465246735834974,
+          "english": null,
+          "spanish": 0.32465246735834974
+        },
+        "meteor": {
+          "overall": 0.4964091614906832,
+          "english": null,
+          "spanish": 0.4964091614906832
+        },
+        "gleu": {
+          "overall": 0.41935483870967744,
+          "english": null,
+          "spanish": 0.41935483870967744
+        },
+        "errant": 0.5294117647058824
+      }
+    },
+    {
+      "tokens": [
+        "They",
+        "do",
+        "not",
+        "like",
+        "cold",
+        "weather"
+      ],
+      "text": "They do not like cold weather",
+      "probabilities": {
+        "base": [
+          0.5651944279670715,
+          0.5357078909873962,
+          0.9959047436714172,
+          0.994469165802002,
+          0.9831790924072266,
+          0.9989563226699829
+        ],
+        "expert": [
+          0.5803992748260498,
+          0.5466167330741882,
+          0.9989551305770874,
+          0.9975205063819885,
+          0.9834282994270325,
+          0.9996253252029419
+        ]
+      },
+      "predictions": {
+        "base": "They do not like cold weather",
+        "expert": "They do not like cold weather",
+        "dexperts": "They do not like cold weather",
+        "antiexpert": "They do not like cold weather"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 1.6358895715677273e-78,
+          "english": 1.6358895715677273e-78,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.2840909090909091,
+          "english": 0.2840909090909091,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.14,
+          "english": 0.14,
+          "spanish": null
+        },
+        "errant": 0.8571428571428572
+      }
+    },
+    {
+      "tokens": [
+        "The",
+        "dog",
+        "doesn",
+        "\u2019",
+        "t",
+        "want",
+        "to",
+        "go",
+        "out",
+        "when",
+        "it",
+        "ra",
+        "ins"
+      ],
+      "text": "The dog doesn\u2019t want to go out when it rains",
+      "probabilities": {
+        "base": [
+          0.8982532024383545,
+          0.9929295182228088,
+          0.28042367100715637,
+          0.11419915407896042,
+          0.999697208404541,
+          0.9654533863067627,
+          0.9846295714378357,
+          0.8826789259910583,
+          0.8757491111755371,
+          0.9841158986091614,
+          0.9915307760238647,
+          0.7897323369979858,
+          0.9995174407958984
+        ],
+        "expert": [
+          0.9974305033683777,
+          0.9993318915367126,
+          0.5593395233154297,
+          0.7600443959236145,
+          0.9999537467956543,
+          0.9984847903251648,
+          0.9997534155845642,
+          0.9482288360595703,
+          0.8962249159812927,
+          0.9387025237083435,
+          0.9984344840049744,
+          0.8489688038825989,
+          0.9995133876800537
+        ]
+      },
+      "predictions": {
+        "base": "The dog does't want to go out when it rains",
+        "expert": "The dog doesn\u2019t want to go out when it rains",
+        "dexperts": "The dog doesn\u2019t want to go out when it rains",
+        "antiexpert": "El dog does't want to go out when it rains"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.3177235575108142,
+          "english": 0.3177235575108142,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.5203847258110823,
+          "english": 0.5203847258110823,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.3787878787878788,
+          "english": 0.3787878787878788,
+          "spanish": null
+        },
+        "errant": 0.8888888888888888
+      }
+    },
+    {
+      "tokens": [
+        "Los",
+        "ni",
+        "\u00f1os",
+        "estab",
+        "an",
+        "vi",
+        "endo",
+        "una",
+        "pel\u00edcula"
+      ],
+      "text": "Los ni\u00f1os estaban viendo una pel\u00edcula",
+      "probabilities": {
+        "base": [
+          0.3492545485496521,
+          0.8921245336532593,
+          0.994178056716919,
+          0.742438554763794,
+          0.9990693926811218,
+          0.8052539229393005,
+          0.9983342289924622,
+          0.9726465940475464,
+          0.9312442541122437
+        ],
+        "expert": [
+          0.6365638375282288,
+          0.8950212597846985,
+          0.99958735704422,
+          0.9198585748672485,
+          0.999099850654602,
+          0.9293733239173889,
+          0.9999589920043945,
+          0.510103702545166,
+          0.9970333576202393
+        ]
+      },
+      "predictions": {
+        "base": "The ni\u00f1os estaban viendo una pel\u00edcula",
+        "expert": "Los ni\u00f1os estaban viendo una pel\u00edcula",
+        "dexperts": "Los ni\u00f1os estaban viendo una pel\u00edcula",
+        "antiexpert": "The ni\u00f1os estaban viendo un pel\u00edcula"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.31140322391459774,
+          "english": 0.31140322391459774,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.4866757000903343,
+          "english": 0.4866757000903343,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.391304347826087,
+          "english": 0.391304347826087,
+          "spanish": null
+        },
+        "errant": 0.9230769230769231
+      }
+    },
+    {
+      "tokens": [
+        "My",
+        "d",
+        "ad",
+        "works",
+        "at",
+        "a",
+        "bank"
+      ],
+      "text": "My dad works at a bank",
+      "probabilities": {
+        "base": [
+          0.9320700168609619,
+          0.7058952450752258,
+          0.9956827163696289,
+          0.9647053480148315,
+          0.45677095651626587,
+          0.9438061714172363,
+          0.9965130686759949
+        ],
+        "expert": [
+          0.9981312155723572,
+          0.9443323612213135,
+          0.9999293088912964,
+          0.9986672401428223,
+          0.8561851978302002,
+          0.980705201625824,
+          0.9999319314956665
+        ]
+      },
+      "predictions": {
+        "base": "My dad works in a bank",
+        "expert": "My dad works at a bank",
+        "dexperts": "My dad works at a bank",
+        "antiexpert": "My fatherad works in a bank"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.31140322391459774,
+          "english": null,
+          "spanish": 0.31140322391459774
+        },
+        "meteor": {
+          "overall": 0.4866757000903343,
+          "english": null,
+          "spanish": 0.4866757000903343
+        },
+        "gleu": {
+          "overall": 0.391304347826087,
+          "english": null,
+          "spanish": 0.391304347826087
+        },
+        "errant": 0.5384615384615384
+      }
+    },
+    {
+      "tokens": [
+        "No",
+        "qui",
+        "ere",
+        "jug",
+        "ar",
+        "af",
+        "u",
+        "era"
+      ],
+      "text": "No quiere jugar afuera",
+      "probabilities": {
+        "base": [
+          0.07213250547647476,
+          0.7394292950630188,
+          0.9995755553245544,
+          0.8856638073921204,
+          0.9980981945991516,
+          0.7606906294822693,
+          0.9998254179954529,
+          0.9998488426208496
+        ],
+        "expert": [
+          0.3791753351688385,
+          0.7935513257980347,
+          0.999944806098938,
+          0.9737865328788757,
+          0.9996293783187866,
+          0.880730926990509,
+          0.9999407529830933,
+          0.9978535771369934
+        ]
+      },
+      "predictions": {
+        "base": "He quiere jugar afuera",
+        "expert": "No quiere jugar afuera",
+        "dexperts": "No quiere jugar afuera",
+        "antiexpert": "He quiere jugar afuera"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 1.168778317482842e-78,
+          "english": 1.168778317482842e-78,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.35435267857142855,
+          "english": 0.35435267857142855,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.14285714285714285,
+          "english": 0.14285714285714285,
+          "spanish": null
+        },
+        "errant": 0.9166666666666666
+      }
+    },
+    {
+      "tokens": [
+        "My",
+        "mother",
+        "cook",
+        "ed",
+        "a",
+        "del",
+        "icious",
+        "dinner",
+        "last",
+        "night"
+      ],
+      "text": "My mother cooked a delicious dinner last night",
+      "probabilities": {
+        "base": [
+          0.863953173160553,
+          0.7776030898094177,
+          0.9367663860321045,
+          0.9942435622215271,
+          0.9718540906906128,
+          0.9652958512306213,
+          0.998246431350708,
+          0.8716753721237183,
+          0.9733447432518005,
+          0.9975556135177612
+        ],
+        "expert": [
+          0.9918878674507141,
+          0.911763072013855,
+          0.7428277134895325,
+          0.9998669624328613,
+          0.9562953114509583,
+          0.9879403114318848,
+          0.9998354911804199,
+          0.87516850233078,
+          0.9949254989624023,
+          0.9998778104782104
+        ]
+      },
+      "predictions": {
+        "base": "My mother cooked a delicious dinner last night",
+        "expert": "My mother cooked a delicious dinner last night",
+        "dexperts": "My mother cooked a delicious dinner last night",
+        "antiexpert": "M mother cooked a delicious dinner last night"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.36787944117144233,
+          "english": null,
+          "spanish": 0.36787944117144233
+        },
+        "meteor": {
+          "overall": 0.5258018092105263,
+          "english": null,
+          "spanish": 0.5258018092105263
+        },
+        "gleu": {
+          "overall": 0.4482758620689655,
+          "english": null,
+          "spanish": 0.4482758620689655
+        },
+        "errant": 0.5
+      }
+    },
+    {
+      "tokens": [
+        "Est",
+        "\u00e1b",
+        "amos",
+        "cam",
+        "in",
+        "ando",
+        "al",
+        "par",
+        "que",
+        "cuando",
+        "em",
+        "pez",
+        "\u00f3",
+        "a",
+        "l",
+        "lo",
+        "ver"
+      ],
+      "text": "Est\u00e1bamos caminando al parque cuando empez\u00f3 a llover",
+      "probabilities": {
+        "base": [
+          0.06804239004850388,
+          0.8174184560775757,
+          0.999923586845398,
+          0.2844814360141754,
+          0.88018798828125,
+          0.9947052597999573,
+          0.5938782691955566,
+          0.9928520321846008,
+          0.9995564818382263,
+          0.9815528988838196,
+          0.8470504879951477,
+          0.9973461627960205,
+          0.9860899448394775,
+          0.9409475922584534,
+          0.9956942796707153,
+          0.998299777507782,
+          0.9969797134399414
+        ],
+        "expert": [
+          0.8789752721786499,
+          0.9910349249839783,
+          0.999935507774353,
+          0.34197840094566345,
+          0.9858368635177612,
+          0.9998237490653992,
+          0.785576581954956,
+          0.9911578297615051,
+          0.9996969699859619,
+          0.9941486120223999,
+          0.4812895357608795,
+          0.9990819692611694,
+          0.9905120730400085,
+          0.8310291171073914,
+          0.9619953632354736,
+          0.9934099316596985,
+          0.9268149733543396
+        ]
+      },
+      "predictions": {
+        "base": "N\u00e1bamos yinando al parque cuando empez\u00f3 a llover",
+        "expert": "Est\u00e1bamos caminando al parque cuando empez\u00f3 a llover",
+        "dexperts": "Est\u00e1bamos caminando al parque cuando empez\u00f3 a llover",
+        "antiexpert": "We\u00e1bamos caminando al parque cuando comenz\u00f3pez\u00f3 a llover"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.17878459274600197,
+          "english": 0.17878459274600197,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.38650096910272497,
+          "english": 0.38650096910272497,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.2714285714285714,
+          "english": 0.2714285714285714,
+          "spanish": null
+        },
+        "errant": 0.8947368421052632
+      }
+    },
+    {
+      "tokens": [
+        "The",
+        "plane",
+        "took",
+        "off",
+        "on",
+        "time"
+      ],
+      "text": "The plane took off on time",
+      "probabilities": {
+        "base": [
+          0.8924811482429504,
+          0.909263014793396,
+          0.8023097515106201,
+          0.9865694642066956,
+          0.9420341849327087,
+          0.98932284116745
+        ],
+        "expert": [
+          0.9983499050140381,
+          0.9365013837814331,
+          0.9370599985122681,
+          0.9994251728057861,
+          0.9568319320678711,
+          0.9617311954498291
+        ]
+      },
+      "predictions": {
+        "base": "The plane took off on time",
+        "expert": "The plane took off on time",
+        "dexperts": "The plane took off on time",
+        "antiexpert": "El plane took off on time"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.36787944117144233,
+          "english": null,
+          "spanish": 0.36787944117144233
+        },
+        "meteor": {
+          "overall": 0.5250974658869396,
+          "english": null,
+          "spanish": 0.5250974658869396
+        },
+        "gleu": {
+          "overall": 0.42857142857142855,
+          "english": null,
+          "spanish": 0.42857142857142855
+        },
+        "errant": 0.5
+      }
+    },
+    {
+      "tokens": [
+        "She",
+        "has",
+        "three",
+        "brothers"
+      ],
+      "text": "She has three brothers",
+      "probabilities": {
+        "base": [
+          0.6331814527511597,
+          0.9792121648788452,
+          0.9763880968093872,
+          0.9938262104988098
+        ],
+        "expert": [
+          0.43499481678009033,
+          0.9956988096237183,
+          0.9979150891304016,
+          0.9997456669807434
+        ]
+      },
+      "predictions": {
+        "base": "She has three brothers",
+        "expert": "She has three brothers",
+        "dexperts": "She has three brothers",
+        "antiexpert": "She has three brothers"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.2865047968601901,
+          "english": 0.2865047968601901,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.46691176470588236,
+          "english": 0.46691176470588236,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.3333333333333333,
+          "english": 0.3333333333333333,
+          "spanish": null
+        },
+        "errant": 0.8888888888888888
+      }
+    },
+    {
+      "tokens": [
+        "We",
+        "always",
+        "buy",
+        "fresh",
+        "f",
+        "ruits",
+        "at",
+        "the",
+        "market"
+      ],
+      "text": "We always buy fresh fruits at the market",
+      "probabilities": {
+        "base": [
+          0.8759312629699707,
+          0.9649641513824463,
+          0.9652053117752075,
+          0.9923721551895142,
+          0.7156186699867249,
+          0.9993714690208435,
+          0.7002556324005127,
+          0.9922148585319519,
+          0.9883983731269836
+        ],
+        "expert": [
+          0.9965330362319946,
+          0.9920070171356201,
+          0.9872527718544006,
+          0.9989827275276184,
+          0.7806822657585144,
+          0.9999923706054688,
+          0.8299424648284912,
+          0.9994418025016785,
+          0.9987941980361938
+        ]
+      },
+      "predictions": {
+        "base": "We always buy fresh fruits at the market",
+        "expert": "We always buy fresh fruits at the market",
+        "dexperts": "We always buy fresh fruits at the market",
+        "antiexpert": "N always buy fresh fruits at the market"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.32465246735834974,
+          "english": 0.32465246735834974,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.4964091614906832,
+          "english": 0.4964091614906832,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.41935483870967744,
+          "english": 0.41935483870967744,
+          "spanish": null
+        },
+        "errant": 0.9411764705882353
+      }
+    },
+    {
+      "tokens": [
+        "The",
+        "boy",
+        "doesn",
+        "'",
+        "t",
+        "know",
+        "how",
+        "to",
+        "read"
+      ],
+      "text": "The boy doesn't know how to read",
+      "probabilities": {
+        "base": [
+          0.7938708066940308,
+          0.9898197054862976,
+          0.5575653314590454,
+          0.9669145941734314,
+          0.9998093247413635,
+          0.9953991770744324,
+          0.9949553608894348,
+          0.9993324875831604,
+          0.9989205598831177
+        ],
+        "expert": [
+          0.31447547674179077,
+          0.9989860653877258,
+          0.4862116873264313,
+          0.5539928674697876,
+          0.9999814033508301,
+          0.999248206615448,
+          0.9995993971824646,
+          0.9999525547027588,
+          0.9999710321426392
+        ]
+      },
+      "predictions": {
+        "base": "The boy doesn't know how to read",
+        "expert": "El boy does't know how to read",
+        "dexperts": "The boy doesn't know how to read",
+        "antiexpert": "The boy does't know how to read"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.42437284567694994,
+          "english": 0.42437284567694994,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.5636932192231731,
+          "english": 0.5636932192231731,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.4782608695652174,
+          "english": 0.4782608695652174,
+          "spanish": null
+        },
+        "errant": 0.9230769230769231
+      }
+    },
+    {
+      "tokens": [
+        "The",
+        "flowers",
+        "sm",
+        "ell",
+        "very",
+        "good"
+      ],
+      "text": "The flowers smell very good",
+      "probabilities": {
+        "base": [
+          0.7358718514442444,
+          0.9886230826377869,
+          0.9875128865242004,
+          0.9872376918792725,
+          0.8386112451553345,
+          0.5475440621376038
+        ],
+        "expert": [
+          0.9939382076263428,
+          0.9990967512130737,
+          0.9985169768333435,
+          0.9974386692047119,
+          0.47806480526924133,
+          0.22456768155097961
+        ]
+      },
+      "predictions": {
+        "base": "The flowers smell very good",
+        "expert": "The flowers smell very well",
+        "dexperts": "The flowers smell very good",
+        "antiexpert": "L flowers smell very well"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.301194211912202,
+          "english": 0.301194211912202,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.47884615384615387,
+          "english": 0.47884615384615387,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.3684210526315789,
+          "english": 0.3684210526315789,
+          "spanish": null
+        },
+        "errant": 0.9090909090909091
+      }
+    },
+    {
+      "tokens": [
+        "No",
+        "envi",
+        "\u00f3",
+        "el",
+        "corre",
+        "o",
+        "elect",
+        "r",
+        "\u00f3n",
+        "ico",
+        "a",
+        "tiempo"
+      ],
+      "text": "No envi\u00f3 el correo electr\u00f3nico a tiempo",
+      "probabilities": {
+        "base": [
+          0.09496260434389114,
+          0.7643744349479675,
+          0.9859872460365295,
+          0.9696095585823059,
+          0.6833757162094116,
+          0.9993106126785278,
+          0.9129480719566345,
+          0.9983958601951599,
+          0.9990715980529785,
+          0.9997503161430359,
+          0.8064157366752625,
+          0.9922745823860168
+        ],
+        "expert": [
+          0.322639524936676,
+          0.6407575011253357,
+          0.993966817855835,
+          0.8318408131599426,
+          0.8487511873245239,
+          0.9999523162841797,
+          0.7835977077484131,
+          0.9998561143875122,
+          0.9999279975891113,
+          0.9999719858169556,
+          0.9646480083465576,
+          0.9975784420967102
+        ]
+      },
+      "predictions": {
+        "base": "He envi\u00f3 el correo electr\u00f3nico a tiempo",
+        "expert": "He envi\u00f3 el correo electr\u00f3nico a tiempo",
+        "dexperts": "No envi\u00f3 el correo electr\u00f3nico a tiempo",
+        "antiexpert": "He envi\u00f3 el correo electr\u00f3nico a tiempo"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 2.0135737838429038e-78,
+          "english": null,
+          "spanish": 2.0135737838429038e-78
+        },
+        "meteor": {
+          "overall": 0.4147104851330204,
+          "english": null,
+          "spanish": 0.4147104851330204
+        },
+        "gleu": {
+          "overall": 0.16666666666666666,
+          "english": null,
+          "spanish": 0.16666666666666666
+        },
+        "errant": 0.5333333333333333
+      }
+    },
+    {
+      "tokens": [
+        "They",
+        "are",
+        "building",
+        "a",
+        "new",
+        "house"
+      ],
+      "text": "They are building a new house",
+      "probabilities": {
+        "base": [
+          0.9090722799301147,
+          0.9833484292030334,
+          0.9592874646186829,
+          0.9955074787139893,
+          0.9979900121688843,
+          0.9800959825515747
+        ],
+        "expert": [
+          0.9954385161399841,
+          0.9914965629577637,
+          0.8892706036567688,
+          0.9997110962867737,
+          0.9999387264251709,
+          0.9975827932357788
+        ]
+      },
+      "predictions": {
+        "base": "They are building a new house",
+        "expert": "They are building a new house",
+        "dexperts": "They are building a new house",
+        "antiexpert": "E are building a new house"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.31140322391459774,
+          "english": null,
+          "spanish": 0.31140322391459774
+        },
+        "meteor": {
+          "overall": 0.4866757000903343,
+          "english": null,
+          "spanish": 0.4866757000903343
+        },
+        "gleu": {
+          "overall": 0.391304347826087,
+          "english": null,
+          "spanish": 0.391304347826087
+        },
+        "errant": 0.5384615384615384
+      }
+    },
+    {
+      "tokens": [
+        "I",
+        "have",
+        "many",
+        "friends",
+        "at",
+        "school"
+      ],
+      "text": "I have many friends at school",
+      "probabilities": {
+        "base": [
+          0.6503331065177917,
+          0.9512181282043457,
+          0.964580237865448,
+          0.9974125027656555,
+          0.9784247875213623,
+          0.9986220598220825
+        ],
+        "expert": [
+          0.3798127770423889,
+          0.9633423686027527,
+          0.9927980899810791,
+          0.9993676543235779,
+          0.9955578446388245,
+          0.9998477697372437
+        ]
+      },
+      "predictions": {
+        "base": "I have many friends at school",
+        "expert": "T have many friends at school",
+        "dexperts": "I have many friends at school",
+        "antiexpert": "I have many friends at school"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.31140322391459774,
+          "english": null,
+          "spanish": 0.31140322391459774
+        },
+        "meteor": {
+          "overall": 0.4866757000903343,
+          "english": null,
+          "spanish": 0.4866757000903343
+        },
+        "gleu": {
+          "overall": 0.391304347826087,
+          "english": null,
+          "spanish": 0.391304347826087
+        },
+        "errant": 1.0
+      }
+    },
+    {
+      "tokens": [
+        "She",
+        "is",
+        "writing",
+        "a",
+        "letter",
+        "to",
+        "her",
+        "friend"
+      ],
+      "text": "She is writing a letter to her friend",
+      "probabilities": {
+        "base": [
+          0.9223816990852356,
+          0.957059919834137,
+          0.9881827235221863,
+          0.9895675778388977,
+          0.9948775172233582,
+          0.9922239780426025,
+          0.9894343018531799,
+          0.9929189085960388
+        ],
+        "expert": [
+          0.9922446608543396,
+          0.98819899559021,
+          0.9993047714233398,
+          0.9981800317764282,
+          0.9997636675834656,
+          0.9997226595878601,
+          0.9998654127120972,
+          0.9983533620834351
+        ]
+      },
+      "predictions": {
+        "base": "She is writing a letter to her friend",
+        "expert": "She is writing a letter to her friend",
+        "dexperts": "She is writing a letter to her friend",
+        "antiexpert": "El is writing a letter to her friend"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.32465246735834974,
+          "english": null,
+          "spanish": 0.32465246735834974
+        },
+        "meteor": {
+          "overall": 0.4964091614906832,
+          "english": null,
+          "spanish": 0.4964091614906832
+        },
+        "gleu": {
+          "overall": 0.41935483870967744,
+          "english": null,
+          "spanish": 0.41935483870967744
+        },
+        "errant": 0.5294117647058824
+      }
+    },
+    {
+      "tokens": [
+        "Los",
+        "per",
+        "ros",
+        "est\u00e1n",
+        "lad",
+        "r\u00e1",
+        "nd",
+        "ole",
+        "muy",
+        "alto"
+      ],
+      "text": "Los perros est\u00e1n ladr\u00e1ndole muy alto",
+      "probabilities": {
+        "base": [
+          0.2926378548145294,
+          0.9898674488067627,
+          0.9820004105567932,
+          0.3961832523345947,
+          0.6206589341163635,
+          0.16392195224761963,
+          0.9919902682304382,
+          0.43503835797309875,
+          0.1742267608642578,
+          0.2808232307434082
+        ],
+        "expert": [
+          0.8842872381210327,
+          0.9976093769073486,
+          0.9750932455062866,
+          0.20046395063400269,
+          0.3493368625640869,
+          0.5039028525352478,
+          0.9929264187812805,
+          0.3791152238845825,
+          0.07816579937934875,
+          0.21005669236183167
+        ]
+      },
+      "predictions": {
+        "base": "The perros est\u00e1n ladandondole fuer fuer",
+        "expert": "Los perros est\u00e1 ladr\u00e1ndose fuer fuer",
+        "dexperts": "Los perros est\u00e1n ladr\u00e1ndole muy alto",
+        "antiexpert": "The perros est\u00e1 ladandondose fuer fuer"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 2.509958499009158e-78,
+          "english": null,
+          "spanish": 2.509958499009158e-78
+        },
+        "meteor": {
+          "overall": 0.2804232804232804,
+          "english": null,
+          "spanish": 0.2804232804232804
+        },
+        "gleu": {
+          "overall": 0.15789473684210525,
+          "english": null,
+          "spanish": 0.15789473684210525
+        },
+        "errant": 0.4545454545454546
+      }
+    },
+    {
+      "tokens": [
+        "They",
+        "do",
+        "not",
+        "want",
+        "to",
+        "go",
+        "to",
+        "the",
+        "mov",
+        "ies",
+        "ton",
+        "ight"
+      ],
+      "text": "They do not want to go to the movies tonight",
+      "probabilities": {
+        "base": [
+          0.865246593952179,
+          0.5150160193443298,
+          0.9968069791793823,
+          0.9757603406906128,
+          0.9883909225463867,
+          0.9915556311607361,
+          0.9856975078582764,
+          0.9923424124717712,
+          0.4031745195388794,
+          0.9995926022529602,
+          0.7503654956817627,
+          0.9992758631706238
+        ],
+        "expert": [
+          0.9954130053520203,
+          0.5314728021621704,
+          0.9993950128555298,
+          0.9973523616790771,
+          0.9991536140441895,
+          0.9993046522140503,
+          0.9965380430221558,
+          0.9988672733306885,
+          0.5189352631568909,
+          0.9999761581420898,
+          0.7871294617652893,
+          0.9999289512634277
+        ]
+      },
+      "predictions": {
+        "base": "They do not want to go to the cinemaies tonight",
+        "expert": "They do not want to go to the movies tonight",
+        "dexperts": "They do not want to go to the movies tonight",
+        "antiexpert": "E do not want to go to the cinemaies tonight"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.29684148026442253,
+          "english": 0.29684148026442253,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.46148255813953487,
+          "english": 0.46148255813953487,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.3484848484848485,
+          "english": 0.3484848484848485,
+          "spanish": null
+        },
+        "errant": 0.8888888888888888
+      }
+    },
+    {
+      "tokens": [
+        "He",
+        "is",
+        "t",
+        "aller",
+        "than",
+        "his",
+        "brother"
+      ],
+      "text": "He is taller than his brother",
+      "probabilities": {
+        "base": [
+          0.7359142899513245,
+          0.9651730060577393,
+          0.929701030254364,
+          0.9999715089797974,
+          0.9887054562568665,
+          0.9965736865997314,
+          0.998473584651947
+        ],
+        "expert": [
+          0.18365180492401123,
+          0.6388244032859802,
+          0.9353973865509033,
+          0.9999954700469971,
+          0.9984845519065857,
+          0.9967689514160156,
+          0.9998524188995361
+        ]
+      },
+      "predictions": {
+        "base": "He is taller than his brother",
+        "expert": "\u00c9 is taller than his brother",
+        "dexperts": "He is taller than his brother",
+        "antiexpert": "He es morealler than his brother"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.2635971381157267,
+          "english": 0.2635971381157267,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.453493265993266,
+          "english": 0.453493265993266,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.36,
+          "english": 0.36,
+          "spanish": null
+        },
+        "errant": 0.9285714285714286
+      }
+    },
+    {
+      "tokens": [
+        "My",
+        "sister",
+        "knows",
+        "how",
+        "to",
+        "play",
+        "the",
+        "guitar",
+        "very",
+        "well"
+      ],
+      "text": "My sister knows how to play the guitar very well",
+      "probabilities": {
+        "base": [
+          0.9028667211532593,
+          0.9856495261192322,
+          0.5565284490585327,
+          0.9583009481430054,
+          0.9958827495574951,
+          0.9972792267799377,
+          0.8979619741439819,
+          0.9951972365379333,
+          0.8878881931304932,
+          0.9935325384140015
+        ],
+        "expert": [
+          0.9984192848205566,
+          0.998856782913208,
+          0.7267025113105774,
+          0.9882127642631531,
+          0.9997944235801697,
+          0.9998685121536255,
+          0.9900937676429749,
+          0.99996018409729,
+          0.6807071566581726,
+          0.99991774559021
+        ]
+      },
+      "predictions": {
+        "base": "My sister knows how to play the guitar very well",
+        "expert": "My sister knows how to play the guitar very well",
+        "dexperts": "My sister knows how to play the guitar very well",
+        "antiexpert": "M sister knows how to play the guitar very well"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.40656965974059917,
+          "english": 0.40656965974059917,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.5522099447513813,
+          "english": 0.5522099447513813,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.4857142857142857,
+          "english": 0.4857142857142857,
+          "spanish": null
+        },
+        "errant": 0.9473684210526316
+      }
+    },
+    {
+      "tokens": [
+        "Est",
+        "aban",
+        "cam",
+        "in",
+        "ando",
+        "al",
+        "super",
+        "mer",
+        "c",
+        "ado",
+        "cuando",
+        "em",
+        "pez",
+        "\u00f3",
+        "a",
+        "l",
+        "lo",
+        "ver"
+      ],
+      "text": "Estaban caminando al supermercado cuando empez\u00f3 a llover",
+      "probabilities": {
+        "base": [
+          0.011389636434614658,
+          0.9668623805046082,
+          0.9468866586685181,
+          0.987068772315979,
+          0.9930697083473206,
+          0.5475789904594421,
+          0.4276801347732544,
+          0.9591581225395203,
+          0.9981191754341125,
+          0.9964560866355896,
+          0.9693013429641724,
+          0.8198888897895813,
+          0.7737894654273987,
+          0.9600186944007874,
+          0.8769798874855042,
+          0.9949500560760498,
+          0.9980319142341614,
+          0.9955604076385498
+        ],
+        "expert": [
+          0.1374780386686325,
+          0.9964267611503601,
+          0.9821516275405884,
+          0.9995974898338318,
+          0.9998080134391785,
+          0.6730138659477234,
+          0.7563878297805786,
+          0.9911383986473083,
+          0.9998062252998352,
+          0.9997755885124207,
+          0.9955162405967712,
+          0.47735440731048584,
+          0.9992859959602356,
+          0.9874312877655029,
+          0.9177414178848267,
+          0.9595082998275757,
+          0.9920719265937805,
+          0.9621228575706482
+        ]
+      },
+      "predictions": {
+        "base": "Theyaban caminando al supermercado cuando empez\u00f3 a llover",
+        "expert": "Theyaban caminando al supermercado cuando empez\u00f3 a llover",
+        "dexperts": "Estaban caminando al supermercado cuando empez\u00f3 a llover",
+        "antiexpert": "Theyaban caminando al supermercado cuando comenz\u00f3pez\u00f3 a llover"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.09173630978141616,
+          "english": 0.09173630978141616,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.31323877068557915,
+          "english": 0.31323877068557915,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.17567567567567569,
+          "english": 0.17567567567567569,
+          "spanish": null
+        },
+        "errant": 0.8
+      }
+    },
+    {
+      "tokens": [
+        "The",
+        "teacher",
+        "explains",
+        "the",
+        "less",
+        "on",
+        "with",
+        "p",
+        "atience"
+      ],
+      "text": "The teacher explains the lesson with patience",
+      "probabilities": {
+        "base": [
+          0.8223114609718323,
+          0.558962345123291,
+          0.8693273067474365,
+          0.9865707755088806,
+          0.911942720413208,
+          0.9976906776428223,
+          0.8842450380325317,
+          0.9726936221122742,
+          0.999496579170227
+        ],
+        "expert": [
+          0.9984197616577148,
+          0.6474013924598694,
+          0.9349424242973328,
+          0.997752845287323,
+          0.9586174488067627,
+          0.9997487664222717,
+          0.8431499004364014,
+          0.9999094009399414,
+          0.9999992847442627
+        ]
+      },
+      "predictions": {
+        "base": "The teacher explains the lesson with patience",
+        "expert": "The teacher explains the lesson with patience",
+        "dexperts": "The teacher explains the lesson with patience",
+        "antiexpert": "El teacher explains the lesson with patience"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.22616792214653433,
+          "english": 0.22616792214653433,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.3744360902255639,
+          "english": 0.3744360902255639,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.28,
+          "english": 0.28,
+          "spanish": null
+        },
+        "errant": 0.8571428571428572
+      }
+    },
+    {
+      "tokens": [
+        "The",
+        "man",
+        "does",
+        "not",
+        "drive",
+        "a",
+        "car"
+      ],
+      "text": "The man does not drive a car",
+      "probabilities": {
+        "base": [
+          0.7557194828987122,
+          0.9902545809745789,
+          0.5162021517753601,
+          0.9794731736183167,
+          0.9872682690620422,
+          0.995212197303772,
+          0.9992536902427673
+        ],
+        "expert": [
+          0.39643388986587524,
+          0.9996731281280518,
+          0.6176238656044006,
+          0.9980542659759521,
+          0.9980846643447876,
+          0.9994187355041504,
+          0.9999635219573975
+        ]
+      },
+      "predictions": {
+        "base": "The man does not drive a car",
+        "expert": "El man does not drive a car",
+        "dexperts": "The man does not drive a car",
+        "antiexpert": "The man does not drive a car"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 2.6794871946199655e-78,
+          "english": null,
+          "spanish": 2.6794871946199655e-78
+        },
+        "meteor": {
+          "overall": 0.3903225806451613,
+          "english": null,
+          "spanish": 0.3903225806451613
+        },
+        "gleu": {
+          "overall": 0.1956521739130435,
+          "english": null,
+          "spanish": 0.1956521739130435
+        },
+        "errant": 0.6153846153846154
+      }
+    },
+    {
+      "tokens": [
+        "We",
+        "finished",
+        "the",
+        "project",
+        "on",
+        "time"
+      ],
+      "text": "We finished the project on time",
+      "probabilities": {
+        "base": [
+          0.8941128849983215,
+          0.8901259899139404,
+          0.9830262064933777,
+          0.9982319474220276,
+          0.9588955640792847,
+          0.9928533434867859
+        ],
+        "expert": [
+          0.9970591068267822,
+          0.864870011806488,
+          0.9947959780693054,
+          0.9998905658721924,
+          0.9732729196548462,
+          0.9753984212875366
+        ]
+      },
+      "predictions": {
+        "base": "We finished the project on time",
+        "expert": "We finished the project on time",
+        "dexperts": "We finished the project on time",
+        "antiexpert": "N finished the project on time"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.31140322391459774,
+          "english": 0.31140322391459774,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.4866757000903343,
+          "english": 0.4866757000903343,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.391304347826087,
+          "english": 0.391304347826087,
+          "spanish": null
+        },
+        "errant": 0.9230769230769231
+      }
+    },
+    {
+      "tokens": [
+        "No",
+        "ent",
+        "iende",
+        "la",
+        "preg",
+        "unta"
+      ],
+      "text": "No entiende la pregunta",
+      "probabilities": {
+        "base": [
+          0.06143233925104141,
+          0.6415152549743652,
+          0.9552310705184937,
+          0.9743474125862122,
+          0.9852500557899475,
+          0.9947997331619263
+        ],
+        "expert": [
+          0.22775381803512573,
+          0.5919672846794128,
+          0.9959362745285034,
+          0.9932113885879517,
+          0.9944130778312683,
+          0.999863862991333
+        ]
+      },
+      "predictions": {
+        "base": "She entiende la pregunta",
+        "expert": "El entiende la pregunta",
+        "dexperts": "No entiende la pregunta",
+        "antiexpert": "She entiende la pregunta"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 1.5007410661215036e-78,
+          "english": null,
+          "spanish": 1.5007410661215036e-78
+        },
+        "meteor": {
+          "overall": 0.3853155339805825,
+          "english": null,
+          "spanish": 0.3853155339805825
+        },
+        "gleu": {
+          "overall": 0.15789473684210525,
+          "english": null,
+          "spanish": 0.15789473684210525
+        },
+        "errant": 0.6363636363636364
+      }
+    },
+    {
+      "tokens": [
+        "They",
+        "always",
+        "arrive",
+        "early",
+        "to",
+        "class"
+      ],
+      "text": "They always arrive early to class",
+      "probabilities": {
+        "base": [
+          0.8791502118110657,
+          0.9110708236694336,
+          0.8994327187538147,
+          0.42627277970314026,
+          0.7581527233123779,
+          0.9784871935844421
+        ],
+        "expert": [
+          0.9954079985618591,
+          0.9687955379486084,
+          0.8001682162284851,
+          0.9395763278007507,
+          0.9329647421836853,
+          0.9987820982933044
+        ]
+      },
+      "predictions": {
+        "base": "They always arrive on to class",
+        "expert": "They always arrive early to class",
+        "dexperts": "They always arrive early to class",
+        "antiexpert": "E always arrive early to class"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.31140322391459774,
+          "english": 0.31140322391459774,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.4866757000903343,
+          "english": 0.4866757000903343,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.391304347826087,
+          "english": 0.391304347826087,
+          "spanish": null
+        },
+        "errant": 0.9230769230769231
+      }
+    },
+    {
+      "tokens": [
+        "La",
+        "pel\u00edcula",
+        "fue",
+        "dem",
+        "asi",
+        "ado",
+        "ab",
+        "urr",
+        "ida"
+      ],
+      "text": "La pel\u00edcula fue demasiado aburrida",
+      "probabilities": {
+        "base": [
+          0.22364647686481476,
+          0.7167799472808838,
+          0.358282208442688,
+          0.7988945841789246,
+          0.9995604157447815,
+          0.9839280247688293,
+          0.9870151281356812,
+          0.9980440139770508,
+          0.9846729636192322
+        ],
+        "expert": [
+          0.9167173504829407,
+          0.997048556804657,
+          0.6539219617843628,
+          0.5555452704429626,
+          0.9999748468399048,
+          0.9985437393188477,
+          0.9900970458984375,
+          0.999504804611206,
+          0.9670078158378601
+        ]
+      },
+      "predictions": {
+        "base": "The pel\u00edcula era demasiado aburrida",
+        "expert": "La pel\u00edcula fue demasiado aburrida",
+        "dexperts": "La pel\u00edcula fue demasiado aburrida",
+        "antiexpert": "The pel\u00edcula fue demasiado aburrida"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 2.2228871419371963e-78,
+          "english": 2.2228871419371963e-78,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.3605769230769231,
+          "english": 0.3605769230769231,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.18421052631578946,
+          "english": 0.18421052631578946,
+          "spanish": null
+        },
+        "errant": 0.8181818181818181
+      }
+    },
+    {
+      "tokens": [
+        "My",
+        "friends",
+        "and",
+        "I",
+        "play",
+        "s",
+        "occer",
+        "every",
+        "Saturday"
+      ],
+      "text": "My friends and I play soccer every Saturday",
+      "probabilities": {
+        "base": [
+          0.8583868741989136,
+          0.9905040860176086,
+          0.996727705001831,
+          0.9775204062461853,
+          0.9736917018890381,
+          0.5151817202568054,
+          0.9999576807022095,
+          0.8809993267059326,
+          0.8480921387672424
+        ],
+        "expert": [
+          0.991547167301178,
+          0.999556839466095,
+          0.9997027516365051,
+          0.9924065470695496,
+          0.9821516275405884,
+          0.7564493417739868,
+          0.9999815225601196,
+          0.9965614676475525,
+          0.9971126317977905
+        ]
+      },
+      "predictions": {
+        "base": "My friends and I play soccer every Saturday",
+        "expert": "My friends and I play soccer every Saturday",
+        "dexperts": "My friends and I play soccer every Saturday",
+        "antiexpert": "M friends and I play soccer every Saturday"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.2865047968601901,
+          "english": null,
+          "spanish": 0.2865047968601901
+        },
+        "meteor": {
+          "overall": 0.4701286764705882,
+          "english": null,
+          "spanish": 0.4701286764705882
+        },
+        "gleu": {
+          "overall": 0.3939393939393939,
+          "english": null,
+          "spanish": 0.3939393939393939
+        },
+        "errant": 0.5555555555555556
+      }
+    },
+    {
+      "tokens": [
+        "T",
+        "iene",
+        "una",
+        "son",
+        "ris",
+        "a",
+        "herm",
+        "osa"
+      ],
+      "text": "Tiene una sonrisa hermosa",
+      "probabilities": {
+        "base": [
+          0.0018410546472296119,
+          0.9787181615829468,
+          0.8980397582054138,
+          0.5742604732513428,
+          0.9860142469406128,
+          0.9992263317108154,
+          0.6068416237831116,
+          0.9873473644256592
+        ],
+        "expert": [
+          0.5318848490715027,
+          0.9981397390365601,
+          0.9653007388114929,
+          0.05792488157749176,
+          0.9956619143486023,
+          0.9995431900024414,
+          0.9078598618507385,
+          0.9966474175453186
+        ]
+      },
+      "predictions": {
+        "base": "Sheiene una sonrisa hermosa",
+        "expert": "Tiene una hermrisa hermosa",
+        "dexperts": "Tiene una sonrisa hermosa",
+        "antiexpert": "Sheiene una hermrisa hermosa"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 1.5007410661215036e-78,
+          "english": null,
+          "spanish": 1.5007410661215036e-78
+        },
+        "meteor": {
+          "overall": 0.3853155339805825,
+          "english": null,
+          "spanish": 0.3853155339805825
+        },
+        "gleu": {
+          "overall": 0.15789473684210525,
+          "english": null,
+          "spanish": 0.15789473684210525
+        },
+        "errant": 0.6363636363636364
+      }
+    },
+    {
+      "tokens": [
+        "The",
+        "train",
+        "arriv",
+        "es",
+        "at",
+        "eight",
+        "sharp"
+      ],
+      "text": "The train arrives at eight sharp",
+      "probabilities": {
+        "base": [
+          0.86909019947052,
+          0.9898530840873718,
+          0.8922489881515503,
+          0.9996334314346313,
+          0.9485065340995789,
+          0.7454015612602234,
+          0.20576027035713196
+        ],
+        "expert": [
+          0.9970201849937439,
+          0.9996019005775452,
+          0.9905999898910522,
+          0.9999924898147583,
+          0.9963392019271851,
+          0.7079921364784241,
+          0.3073704242706299
+        ]
+      },
+      "predictions": {
+        "base": "The train arrives at eight o",
+        "expert": "The train arrives at eight o",
+        "dexperts": "The train arrives at eight sharp",
+        "antiexpert": "El train arrives at eight o"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.16954225822593183,
+          "english": 0.16954225822593183,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.35319148936170214,
+          "english": 0.35319148936170214,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.25925925925925924,
+          "english": 0.25925925925925924,
+          "spanish": null
+        },
+        "errant": 0.8666666666666667
+      }
+    },
+    {
+      "tokens": [
+        "N",
+        "os",
+        "ot",
+        "ros",
+        "est\u00e1",
+        "b",
+        "amos",
+        "muy",
+        "em",
+        "oc",
+        "ion",
+        "ados",
+        "por",
+        "el",
+        "via",
+        "je"
+      ],
+      "text": "Nosotros est\u00e1bamos muy emocionados por el viaje",
+      "probabilities": {
+        "base": [
+          0.5192323923110962,
+          0.9840673208236694,
+          0.7841466665267944,
+          0.9679021835327148,
+          0.697330117225647,
+          0.9979943037033081,
+          0.9999215602874756,
+          0.9880387187004089,
+          0.6405605673789978,
+          0.9962838292121887,
+          0.9942507743835449,
+          0.962641716003418,
+          0.6588739156723022,
+          0.9368354082107544,
+          0.9980354905128479,
+          0.9988975524902344
+        ],
+        "expert": [
+          0.16425155103206635,
+          0.9966660141944885,
+          0.8614933490753174,
+          0.950310230255127,
+          0.7543564438819885,
+          0.9886266589164734,
+          0.9999687671661377,
+          0.9827995300292969,
+          0.5786120295524597,
+          0.9959480166435242,
+          0.998872697353363,
+          0.9858442544937134,
+          0.9518147706985474,
+          0.9502175450325012,
+          0.9986988306045532,
+          0.9998836517333984
+        ]
+      },
+      "predictions": {
+        "base": "Nosotros est\u00e1bamos muy emocionados por el viaje",
+        "expert": "Estosotros est\u00e1bamos muy emocionados por el viaje",
+        "dexperts": "Nosotros est\u00e1bamos muy emocionados por el viaje",
+        "antiexpert": "Weosotros estbamos muy emocionados por el viaje"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.22616792214653433,
+          "english": null,
+          "spanish": 0.22616792214653433
+        },
+        "meteor": {
+          "overall": 0.4500835421888054,
+          "english": null,
+          "spanish": 0.4500835421888054
+        },
+        "gleu": {
+          "overall": 0.28,
+          "english": null,
+          "spanish": 0.28
+        },
+        "errant": 0.5
+      }
+    },
+    {
+      "tokens": [
+        "We",
+        "have",
+        "an",
+        "important",
+        "meeting",
+        "tom",
+        "orrow"
+      ],
+      "text": "We have an important meeting tomorrow",
+      "probabilities": {
+        "base": [
+          0.8282217979431152,
+          0.9535123705863953,
+          0.949527382850647,
+          0.9962950348854065,
+          0.9972956776618958,
+          0.9946579337120056,
+          0.9985503554344177
+        ],
+        "expert": [
+          0.996056318283081,
+          0.8460557460784912,
+          0.6645138263702393,
+          0.999563992023468,
+          0.996828019618988,
+          0.9975549578666687,
+          0.999976396560669
+        ]
+      },
+      "predictions": {
+        "base": "We have an important meeting tomorrow",
+        "expert": "We have an important meeting tomorrow",
+        "dexperts": "We have an important meeting tomorrow",
+        "antiexpert": "N have an important meeting tomorrow"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.31140322391459774,
+          "english": null,
+          "spanish": 0.31140322391459774
+        },
+        "meteor": {
+          "overall": 0.4866757000903343,
+          "english": null,
+          "spanish": 0.4866757000903343
+        },
+        "gleu": {
+          "overall": 0.391304347826087,
+          "english": null,
+          "spanish": 0.391304347826087
+        },
+        "errant": 0.5384615384615384
+      }
+    },
+    {
+      "tokens": [
+        "He",
+        "wrote",
+        "a",
+        "poem",
+        "for",
+        "his",
+        "girl",
+        "friend"
+      ],
+      "text": "He wrote a poem for his girlfriend",
+      "probabilities": {
+        "base": [
+          0.8214954733848572,
+          0.9821901321411133,
+          0.9824314713478088,
+          0.9979704022407532,
+          0.9923386573791504,
+          0.9957913160324097,
+          0.9989718198776245,
+          0.9992117881774902
+        ],
+        "expert": [
+          0.2950519025325775,
+          0.004828195087611675,
+          0.9874106049537659,
+          0.9994425177574158,
+          0.998608410358429,
+          0.99729984998703,
+          0.9999371767044067,
+          0.9999432563781738
+        ]
+      },
+      "predictions": {
+        "base": "He wrote a poem for his girlfriend",
+        "expert": "E escri a poem for his girlfriend",
+        "dexperts": "He wrote a poem for his girlfriend",
+        "antiexpert": "He escri a poem for his girlfriend"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.31890655732397044,
+          "english": null,
+          "spanish": 0.31890655732397044
+        },
+        "meteor": {
+          "overall": 0.4922391491807991,
+          "english": null,
+          "spanish": 0.4922391491807991
+        },
+        "gleu": {
+          "overall": 0.4074074074074074,
+          "english": null,
+          "spanish": 0.4074074074074074
+        },
+        "errant": 1.0
+      }
+    },
+    {
+      "tokens": [
+        "No",
+        "t",
+        "engo",
+        "tiempo",
+        "suf",
+        "ic",
+        "iente",
+        "para",
+        "termin",
+        "ar"
+      ],
+      "text": "No tengo tiempo suficiente para terminar",
+      "probabilities": {
+        "base": [
+          0.31689125299453735,
+          0.9260761737823486,
+          0.9989000558853149,
+          0.5542417764663696,
+          0.7218804359436035,
+          0.9987983703613281,
+          0.9979715943336487,
+          0.9825561046600342,
+          0.8561492562294006,
+          0.9702867269515991
+        ],
+        "expert": [
+          0.3958422541618347,
+          0.9335830807685852,
+          0.9994934797286987,
+          0.5206003785133362,
+          0.8466376066207886,
+          0.9999779462814331,
+          0.9998034834861755,
+          0.9976320266723633,
+          0.9031102061271667,
+          0.8790664076805115
+        ]
+      },
+      "predictions": {
+        "base": "No tengo tiempo suficiente para terminar",
+        "expert": "I tengo tiempo suficiente para terminar",
+        "dexperts": "No tengo tiempo suficiente para terminar",
+        "antiexpert": "I tengo tiempo suficiente para terminar"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 3.1270001662546783e-155,
+          "english": 3.1270001662546783e-155,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.3872053872053872,
+          "english": 0.3872053872053872,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.16,
+          "english": 0.16,
+          "spanish": null
+        },
+        "errant": 0.8571428571428572
+      }
+    },
+    {
+      "tokens": [
+        "She",
+        "is",
+        "very",
+        "excited",
+        "for",
+        "ton",
+        "ight",
+        "\u2019",
+        "s",
+        "concert"
+      ],
+      "text": "She is very excited for tonight\u2019s concert",
+      "probabilities": {
+        "base": [
+          0.909061849117279,
+          0.8907594680786133,
+          0.9426444172859192,
+          0.9827229976654053,
+          0.44487515091896057,
+          0.7022338509559631,
+          0.9853698015213013,
+          0.1354042887687683,
+          0.9993458390235901,
+          0.9787647724151611
+        ],
+        "expert": [
+          0.998689591884613,
+          0.9611327648162842,
+          0.9380964040756226,
+          0.9990035891532898,
+          0.5181128978729248,
+          0.11562046408653259,
+          0.9997853636741638,
+          0.6274670958518982,
+          0.9999217987060547,
+          0.9979041814804077
+        ]
+      },
+      "predictions": {
+        "base": "She is very excited about tonight's concert",
+        "expert": "She is very excited for theight\u2019s concert",
+        "dexperts": "She is very excited for tonight\u2019s concert",
+        "antiexpert": "El is very excited about theight's concert"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.13367741668584246,
+          "english": null,
+          "spanish": 0.13367741668584246
+        },
+        "meteor": {
+          "overall": 0.34845496383957925,
+          "english": null,
+          "spanish": 0.34845496383957925
+        },
+        "gleu": {
+          "overall": 0.22727272727272727,
+          "english": null,
+          "spanish": 0.22727272727272727
+        },
+        "errant": 0.6111111111111112
+      }
+    },
+    {
+      "tokens": [
+        "La",
+        "tart",
+        "a",
+        "estaba",
+        "dem",
+        "asi",
+        "ado",
+        "d",
+        "ul",
+        "ce"
+      ],
+      "text": "La tarta estaba demasiado dulce",
+      "probabilities": {
+        "base": [
+          0.128034770488739,
+          0.3512677848339081,
+          0.9987233281135559,
+          0.3390577435493469,
+          0.7487440705299377,
+          0.9884040355682373,
+          0.9878726005554199,
+          0.9837372899055481,
+          0.9998972415924072,
+          0.9946005344390869
+        ],
+        "expert": [
+          0.9484814405441284,
+          0.49515727162361145,
+          0.9986421465873718,
+          0.6476668119430542,
+          0.7744132876396179,
+          0.9999508857727051,
+          0.9986186027526855,
+          0.9949617385864258,
+          0.9999352693557739,
+          0.9997089505195618
+        ]
+      },
+      "predictions": {
+        "base": "The torta era demasiado dulce",
+        "expert": "La tarta estaba demasiado dulce",
+        "dexperts": "La tarta estaba demasiado dulce",
+        "antiexpert": "The torta era demasiado dulce"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 2.06862957552236e-78,
+          "english": 2.06862957552236e-78,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.2831196581196581,
+          "english": 0.2831196581196581,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.15789473684210525,
+          "english": 0.15789473684210525,
+          "spanish": null
+        },
+        "errant": 0.9090909090909091
+      }
+    },
+    {
+      "tokens": [
+        "We",
+        "want",
+        "to",
+        "learn",
+        "to",
+        "sw",
+        "im",
+        "this",
+        "summer"
+      ],
+      "text": "We want to learn to swim this summer",
+      "probabilities": {
+        "base": [
+          0.8841956257820129,
+          0.9410626292228699,
+          0.9903209805488586,
+          0.9955293536186218,
+          0.6807368993759155,
+          0.9984948635101318,
+          0.9993366599082947,
+          0.9946697354316711,
+          0.9967926144599915
+        ],
+        "expert": [
+          0.9747740030288696,
+          0.9043463468551636,
+          0.9993964433670044,
+          0.9993423819541931,
+          0.7004023194313049,
+          0.9997914433479309,
+          0.9998171925544739,
+          0.9993184804916382,
+          0.9998086094856262
+        ]
+      },
+      "predictions": {
+        "base": "We want to learn to swim this summer",
+        "expert": "We want to learn to swim this summer",
+        "dexperts": "We want to learn to swim this summer",
+        "antiexpert": "N want to learn to swim this summer"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.22447821150214162,
+          "english": 0.22447821150214162,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.49301242236024845,
+          "english": 0.49301242236024845,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.3225806451612903,
+          "english": 0.3225806451612903,
+          "spanish": null
+        },
+        "errant": 0.8823529411764706
+      }
+    },
+    {
+      "tokens": [
+        "No",
+        "tiene",
+        "ning",
+        "una",
+        "idea",
+        "de",
+        "qu",
+        "\u00e9",
+        "hacer"
+      ],
+      "text": "No tiene ninguna idea de qu\u00e9 hacer",
+      "probabilities": {
+        "base": [
+          0.07142790406942368,
+          0.8912318348884583,
+          0.4370257556438446,
+          0.9512074589729309,
+          0.9968826770782471,
+          0.9404863715171814,
+          0.4423848092556,
+          0.9952573180198669,
+          0.9927114248275757
+        ],
+        "expert": [
+          0.3754803538322449,
+          0.340309739112854,
+          0.5678451657295227,
+          0.917199432849884,
+          0.9924299120903015,
+          0.9652457237243652,
+          0.6170511841773987,
+          0.9980541467666626,
+          0.9874302744865417
+        ]
+      },
+      "predictions": {
+        "base": "He tiene ninguna idea de qu\u00e9 hacer",
+        "expert": "No t ninguna idea de qu\u00e9 hacer",
+        "dexperts": "No tiene ninguna idea de qu\u00e9 hacer",
+        "antiexpert": "He tiene ninguna idea de que\u00e9 hacer"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.12017990948265363,
+          "english": 0.12017990948265363,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.38999264164827085,
+          "english": 0.38999264164827085,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.1896551724137931,
+          "english": 0.1896551724137931,
+          "spanish": null
+        },
+        "errant": 0.875
+      }
+    },
+    {
+      "tokens": [
+        "The",
+        "dog",
+        "doesn",
+        "\u2019",
+        "t",
+        "want",
+        "to",
+        "go",
+        "out",
+        "because",
+        "it",
+        "\u2019",
+        "s",
+        "ra",
+        "ining"
+      ],
+      "text": "The dog doesn\u2019t want to go out because it\u2019s raining",
+      "probabilities": {
+        "base": [
+          0.9024789929389954,
+          0.9947192668914795,
+          0.3312697112560272,
+          0.12282289564609528,
+          0.9996665716171265,
+          0.9828249216079712,
+          0.9945681095123291,
+          0.8264978528022766,
+          0.8370059728622437,
+          0.9738599061965942,
+          0.9828845262527466,
+          0.5464802980422974,
+          0.9998636245727539,
+          0.9905862212181091,
+          0.9986549615859985
+        ],
+        "expert": [
+          0.9979098439216614,
+          0.9997231364250183,
+          0.6141307353973389,
+          0.7456153631210327,
+          0.9999418258666992,
+          0.9994415640830994,
+          0.9997813105583191,
+          0.9376011490821838,
+          0.935245931148529,
+          0.9883053302764893,
+          0.9980378746986389,
+          0.7030887603759766,
+          0.9999899864196777,
+          0.998894989490509,
+          0.9994170665740967
+        ]
+      },
+      "predictions": {
+        "base": "The dog does't want to go out because it\u2019s raining",
+        "expert": "The dog doesn\u2019t want to go out because it\u2019s raining",
+        "dexperts": "The dog doesn\u2019t want to go out because it\u2019s raining",
+        "antiexpert": "El dog does't want to go out because it iss raining"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.17185045819660794,
+          "english": null,
+          "spanish": 0.17185045819660794
+        },
+        "meteor": {
+          "overall": 0.4099506578947369,
+          "english": null,
+          "spanish": 0.4099506578947369
+        },
+        "gleu": {
+          "overall": 0.24324324324324326,
+          "english": null,
+          "spanish": 0.24324324324324326
+        },
+        "errant": 0.5
+      }
+    },
+    {
+      "tokens": [
+        "E",
+        "ll",
+        "os",
+        "lleg",
+        "aron",
+        "tarde",
+        "para",
+        "el",
+        "vuel",
+        "o"
+      ],
+      "text": "Ellos llegaron tarde para el vuelo",
+      "probabilities": {
+        "base": [
+          0.12242511659860611,
+          0.804307222366333,
+          0.9905548691749573,
+          0.21964146196842194,
+          0.9211810231208801,
+          0.9688300490379333,
+          0.5120617151260376,
+          0.9525195360183716,
+          0.9282630085945129,
+          0.9997949004173279
+        ],
+        "expert": [
+          0.5035253763198853,
+          0.9949002861976624,
+          0.9998371601104736,
+          0.3757430911064148,
+          0.9544922709465027,
+          0.977794349193573,
+          0.5269433259963989,
+          0.9942554831504822,
+          0.9968394041061401,
+          0.9999977350234985
+        ]
+      },
+      "predictions": {
+        "base": "Theyllos estabaron tarde para el vuelo",
+        "expert": "Ellos estabaron tarde para el vuelo",
+        "dexperts": "Ellos llegaron tarde para el vuelo",
+        "antiexpert": "Theyllos estabaron tarde al el vuelo"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.18693159143202892,
+          "english": 0.18693159143202892,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.436842105263158,
+          "english": 0.436842105263158,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.23809523809523808,
+          "english": 0.23809523809523808,
+          "spanish": null
+        },
+        "errant": 0.8333333333333334
+      }
+    },
+    {
+      "tokens": [
+        "She",
+        "needs",
+        "to",
+        "study",
+        "more",
+        "for",
+        "the",
+        "final",
+        "exam"
+      ],
+      "text": "She needs to study more for the final exam",
+      "probabilities": {
+        "base": [
+          0.8760761022567749,
+          0.9148333072662354,
+          0.9600504636764526,
+          0.9945914149284363,
+          0.9515348076820374,
+          0.992724597454071,
+          0.9758450388908386,
+          0.9931142926216125,
+          0.9402456283569336
+        ],
+        "expert": [
+          0.9972761273384094,
+          0.999195396900177,
+          0.9991614818572998,
+          0.9988424181938171,
+          0.996616780757904,
+          0.9913941025733948,
+          0.9955422282218933,
+          0.961545467376709,
+          0.9983243346214294
+        ]
+      },
+      "predictions": {
+        "base": "She needs to study more for the final exam",
+        "expert": "She needs to study more for the final exam",
+        "dexperts": "She needs to study more for the final exam",
+        "antiexpert": "El needs to study more for the final exam"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.36787944117144233,
+          "english": 0.36787944117144233,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.5259548047072413,
+          "english": 0.5259548047072413,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.45454545454545453,
+          "english": 0.45454545454545453,
+          "spanish": null
+        },
+        "errant": 0.9444444444444444
+      }
+    },
+    {
+      "tokens": [
+        "He",
+        "wrote",
+        "a",
+        "letter",
+        "to",
+        "his",
+        "mother"
+      ],
+      "text": "He wrote a letter to his mother",
+      "probabilities": {
+        "base": [
+          0.7413725852966309,
+          0.9710202217102051,
+          0.9801238775253296,
+          0.9984540939331055,
+          0.9964720010757446,
+          0.997229278087616,
+          0.9963268637657166
+        ],
+        "expert": [
+          0.1983451545238495,
+          0.002992660505697131,
+          0.9891855716705322,
+          0.9997377991676331,
+          0.9995558857917786,
+          0.9957473874092102,
+          0.9994010925292969
+        ]
+      },
+      "predictions": {
+        "base": "He wrote a letter to his mother",
+        "expert": "E escri a letter to his mother",
+        "dexperts": "He wrote a letter to his mother",
+        "antiexpert": "He escri a letter to his mother"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.31890655732397044,
+          "english": null,
+          "spanish": 0.31890655732397044
+        },
+        "meteor": {
+          "overall": 0.47355561943087093,
+          "english": null,
+          "spanish": 0.47355561943087093
+        },
+        "gleu": {
+          "overall": 0.4074074074074074,
+          "english": null,
+          "spanish": 0.4074074074074074
+        },
+        "errant": 1.0
+      }
+    },
+    {
+      "tokens": [
+        "The",
+        "children",
+        "play",
+        "in",
+        "the",
+        "park",
+        "after",
+        "school"
+      ],
+      "text": "The children play in the park after school",
+      "probabilities": {
+        "base": [
+          0.7110717296600342,
+          0.6989822387695312,
+          0.8977832794189453,
+          0.9074384570121765,
+          0.9941275119781494,
+          0.9899617433547974,
+          0.9940412640571594,
+          0.9278214573860168
+        ],
+        "expert": [
+          0.9609076976776123,
+          0.9092076420783997,
+          0.9540631771087646,
+          0.7714993953704834,
+          0.9993807077407837,
+          0.9995232820510864,
+          0.9994953870773315,
+          0.9995902180671692
+        ]
+      },
+      "predictions": {
+        "base": "The children play in the park after school",
+        "expert": "The children play in the park after school",
+        "dexperts": "The children play in the park after school",
+        "antiexpert": "Los children play in the park after school"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.25283959580474646,
+          "english": null,
+          "spanish": 0.25283959580474646
+        },
+        "meteor": {
+          "overall": 0.4464909217877095,
+          "english": null,
+          "spanish": 0.4464909217877095
+        },
+        "gleu": {
+          "overall": 0.37142857142857144,
+          "english": null,
+          "spanish": 0.37142857142857144
+        },
+        "errant": 0.5789473684210527
+      }
+    },
+    {
+      "tokens": [
+        "T",
+        "iene",
+        "una",
+        "gran",
+        "cole",
+        "cci\u00f3n",
+        "de",
+        "lib",
+        "ros"
+      ],
+      "text": "Tiene una gran colecci\u00f3n de libros",
+      "probabilities": {
+        "base": [
+          0.000998244620859623,
+          0.9825909733772278,
+          0.97022545337677,
+          0.6124937534332275,
+          0.9936197400093079,
+          0.9627504944801331,
+          0.9962872266769409,
+          0.9945815205574036,
+          0.9994283318519592
+        ],
+        "expert": [
+          0.643596887588501,
+          0.9942090511322021,
+          0.9858819246292114,
+          0.8020668625831604,
+          0.9968644976615906,
+          0.9997686743736267,
+          0.9998143315315247,
+          0.9995604157447815,
+          0.999987006187439
+        ]
+      },
+      "predictions": {
+        "base": "Sheiene una gran colecci\u00f3n de libros",
+        "expert": "Tiene una gran colecci\u00f3n de libros",
+        "dexperts": "Tiene una gran colecci\u00f3n de libros",
+        "antiexpert": "Sheiene una gran colecci\u00f3n de libros"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.16954225822593183,
+          "english": null,
+          "spanish": 0.16954225822593183
+        },
+        "meteor": {
+          "overall": 0.4245468873128448,
+          "english": null,
+          "spanish": 0.4245468873128448
+        },
+        "gleu": {
+          "overall": 0.25925925925925924,
+          "english": null,
+          "spanish": 0.25925925925925924
+        },
+        "errant": 0.6
+      }
+    },
+    {
+      "tokens": [
+        "They",
+        "are",
+        "going",
+        "to",
+        "travel",
+        "to",
+        "the",
+        "beach",
+        "next",
+        "month"
+      ],
+      "text": "They are going to travel to the beach next month",
+      "probabilities": {
+        "base": [
+          0.8869535326957703,
+          0.7676681280136108,
+          0.9592422246932983,
+          0.9933211207389832,
+          0.9359889626502991,
+          0.9855250716209412,
+          0.9971001744270325,
+          0.9963830709457397,
+          0.8918970227241516,
+          0.9980491399765015
+        ],
+        "expert": [
+          0.996435284614563,
+          0.8915209174156189,
+          0.931993842124939,
+          0.9831618070602417,
+          0.6943005919456482,
+          0.9981067180633545,
+          0.9993141889572144,
+          0.9993813037872314,
+          0.9970454573631287,
+          0.9999550580978394
+        ]
+      },
+      "predictions": {
+        "base": "They are going to travel to the beach next month",
+        "expert": "They are going to travel to the beach next month",
+        "dexperts": "They are going to travel to the beach next month",
+        "antiexpert": "E are going to travel to the beach next month"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.33287108369807955,
+          "english": 0.33287108369807955,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.5022613065326633,
+          "english": 0.5022613065326633,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.4358974358974359,
+          "english": 0.4358974358974359,
+          "spanish": null
+        },
+        "errant": 0.9523809523809523
+      }
+    },
+    {
+      "tokens": [
+        "No",
+        "sab",
+        "\u00eda",
+        "que",
+        "ella",
+        "estaba",
+        "v",
+        "ini",
+        "endo"
+      ],
+      "text": "No sab\u00eda que ella estaba viniendo",
+      "probabilities": {
+        "base": [
+          0.0940096527338028,
+          0.8555222749710083,
+          0.7636830806732178,
+          0.9923067688941956,
+          0.8645434379577637,
+          0.6281380653381348,
+          0.6929290294647217,
+          0.9959437251091003,
+          0.9993263483047485
+        ],
+        "expert": [
+          0.5049408674240112,
+          0.846642792224884,
+          0.9951198101043701,
+          0.9965597987174988,
+          0.5129645466804504,
+          0.18849781155586243,
+          0.5820573568344116,
+          0.9989577531814575,
+          0.9986042380332947
+        ]
+      },
+      "predictions": {
+        "base": "I sab\u00eda que ella estaba viniendo",
+        "expert": "No sab\u00eda que ella ven viniendo",
+        "dexperts": "No sab\u00eda que ella estaba viniendo",
+        "antiexpert": "I sab\u00eda que ella ven viniendo"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.1582341759519314,
+          "english": 0.1582341759519314,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.32266260162601623,
+          "english": 0.32266260162601623,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.21739130434782608,
+          "english": 0.21739130434782608,
+          "spanish": null
+        },
+        "errant": 0.8461538461538461
+      }
+    },
+    {
+      "tokens": [
+        "The",
+        "car",
+        "needs",
+        "to",
+        "be",
+        "rep",
+        "a",
+        "ired"
+      ],
+      "text": "The car needs to be repaired",
+      "probabilities": {
+        "base": [
+          0.8655865788459778,
+          0.9935721158981323,
+          0.9438584446907043,
+          0.8907225728034973,
+          0.9953081011772156,
+          0.7730880379676819,
+          0.995126485824585,
+          0.999749481678009
+        ],
+        "expert": [
+          0.9969469904899597,
+          0.999642014503479,
+          0.9979872703552246,
+          0.9343085289001465,
+          0.9975112676620483,
+          0.9421740174293518,
+          0.9996640682220459,
+          0.9999994039535522
+        ]
+      },
+      "predictions": {
+        "base": "The car needs to be repaired",
+        "expert": "The car needs to be repaired",
+        "dexperts": "The car needs to be repaired",
+        "antiexpert": "El car needs to be repaired"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.36787944117144233,
+          "english": 0.36787944117144233,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.5250974658869396,
+          "english": 0.5250974658869396,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.42857142857142855,
+          "english": 0.42857142857142855,
+          "spanish": null
+        },
+        "errant": 0.9166666666666666
+      }
+    },
+    {
+      "tokens": [
+        "T",
+        "ienen",
+        "mucho",
+        "de",
+        "ber",
+        "ho",
+        "y"
+      ],
+      "text": "Tienen mucho deber hoy",
+      "probabilities": {
+        "base": [
+          0.03197629004716873,
+          0.948699414730072,
+          0.6309878826141357,
+          0.7912815809249878,
+          0.5227161049842834,
+          0.8175785541534424,
+          0.9997239708900452
+        ],
+        "expert": [
+          0.276736319065094,
+          0.9660542011260986,
+          0.3829551935195923,
+          0.19531388580799103,
+          0.9648640155792236,
+          0.5115417838096619,
+          0.9999786615371704
+        ]
+      },
+      "predictions": {
+        "base": "Theyienen mucho deber hoy",
+        "expert": "Theyienen much trabajober hoy",
+        "dexperts": "Tienen mucho deber hoy",
+        "antiexpert": "Theyienen much trabajoberesy"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 1.3577841712062768e-232,
+          "english": 1.3577841712062768e-232,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.08264462809917356,
+          "english": 0.08264462809917356,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.021739130434782608,
+          "english": 0.021739130434782608,
+          "spanish": null
+        },
+        "errant": 0.7692307692307692
+      }
+    },
+    {
+      "tokens": [
+        "My",
+        "parents",
+        "are",
+        "cook",
+        "ing",
+        "dinner",
+        "together"
+      ],
+      "text": "My parents are cooking dinner together",
+      "probabilities": {
+        "base": [
+          0.9053724408149719,
+          0.9860271215438843,
+          0.9792967438697815,
+          0.9135229587554932,
+          0.9982220530509949,
+          0.8920267820358276,
+          0.9917559623718262
+        ],
+        "expert": [
+          0.9975399971008301,
+          0.9998915195465088,
+          0.9993485808372498,
+          0.9840436577796936,
+          0.9999839067459106,
+          0.9836791157722473,
+          0.9994742274284363
+        ]
+      },
+      "predictions": {
+        "base": "My parents are cooking dinner together",
+        "expert": "My parents are cooking dinner together",
+        "dexperts": "My parents are cooking dinner together",
+        "antiexpert": "M parents are cooking dinner together"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.2635971381157267,
+          "english": null,
+          "spanish": 0.2635971381157267
+        },
+        "meteor": {
+          "overall": 0.453493265993266,
+          "english": null,
+          "spanish": 0.453493265993266
+        },
+        "gleu": {
+          "overall": 0.36,
+          "english": null,
+          "spanish": 0.36
+        },
+        "errant": 0.5714285714285714
+      }
+    },
+    {
+      "tokens": [
+        "No",
+        "le",
+        "g",
+        "usta",
+        "le",
+        "er",
+        "novel",
+        "as"
+      ],
+      "text": "No le gusta leer novelas",
+      "probabilities": {
+        "base": [
+          0.02921227179467678,
+          0.7844448089599609,
+          0.984759509563446,
+          0.7391762733459473,
+          0.974702000617981,
+          0.9996850490570068,
+          0.8988878130912781,
+          0.9986733198165894
+        ],
+        "expert": [
+          0.22175563871860504,
+          0.9871865510940552,
+          0.9666525721549988,
+          0.9148808121681213,
+          0.9966779947280884,
+          0.9995625615119934,
+          0.9720985889434814,
+          0.9998533725738525
+        ]
+      },
+      "predictions": {
+        "base": "She le gusta leer novelas",
+        "expert": "El le gusta leer novelas",
+        "dexperts": "No le gusta leer novelas",
+        "antiexpert": "She le gusta leer novelas"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.13501633901742352,
+          "english": null,
+          "spanish": 0.13501633901742352
+        },
+        "meteor": {
+          "overall": 0.40819672131147544,
+          "english": null,
+          "spanish": 0.40819672131147544
+        },
+        "gleu": {
+          "overall": 0.21739130434782608,
+          "english": null,
+          "spanish": 0.21739130434782608
+        },
+        "errant": 0.6153846153846154
+      }
+    },
+    {
+      "tokens": [
+        "We",
+        "finished",
+        "the",
+        "project",
+        "last",
+        "night"
+      ],
+      "text": "We finished the project last night",
+      "probabilities": {
+        "base": [
+          0.881393313407898,
+          0.9315958619117737,
+          0.9862739443778992,
+          0.9974768757820129,
+          0.9697070717811584,
+          0.9973633885383606
+        ],
+        "expert": [
+          0.9967355132102966,
+          0.9748548269271851,
+          0.9847583770751953,
+          0.999845027923584,
+          0.9962743520736694,
+          0.9998713731765747
+        ]
+      },
+      "predictions": {
+        "base": "We finished the project last night",
+        "expert": "We finished the project last night",
+        "dexperts": "We finished the project last night",
+        "antiexpert": "\n finished the project last night"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.36787944117144233,
+          "english": 0.36787944117144233,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.5250974658869396,
+          "english": 0.5250974658869396,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.42857142857142855,
+          "english": 0.42857142857142855,
+          "spanish": null
+        },
+        "errant": 0.9166666666666666
+      }
+    },
+    {
+      "tokens": [
+        "No",
+        "envi",
+        "\u00f3",
+        "la",
+        "inv",
+        "ita",
+        "ci\u00f3n",
+        "\n",
+        "\n",
+        "##",
+        "#",
+        "Input",
+        ":",
+        "\n",
+        "The",
+        "research",
+        "ers",
+        "are",
+        "developing",
+        "a",
+        "new",
+        "method",
+        "to",
+        "detect",
+        "early",
+        "signs",
+        "of",
+        "disease",
+        "\n",
+        "\n",
+        "##",
+        "#",
+        "Response",
+        ":",
+        "\n",
+        "Los",
+        "investig",
+        "adores",
+        "est\u00e1n",
+        "desarroll",
+        "ando",
+        "un",
+        "nuevo",
+        "m\u00e9t",
+        "odo",
+        "para",
+        "detect",
+        "ar",
+        "sign",
+        "os",
+        "tem",
+        "pr",
+        "anos",
+        "de",
+        "enfer",
+        "med",
+        "ad"
+      ],
+      "text": "No envi\u00f3 la invitaci\u00f3n\n\n### Input:\nThe researchers are developing a new method to detect early signs of disease\n\n### Response:\nLos investigadores est\u00e1n desarrollando un nuevo m\u00e9todo para detectar signos tempranos de enfermedad",
+      "probabilities": {
+        "base": [
+          0.08255865424871445,
+          0.5219112038612366,
+          0.9807701110839844,
+          0.9620524644851685,
+          0.9928750991821289,
+          0.998282790184021,
+          0.9985577464103699,
+          0.8281195163726807,
+          0.8903192281723022,
+          0.8161197304725647,
+          0.9854187965393066,
+          0.2607210576534271,
+          0.9762507081031799,
+          0.9863942265510559,
+          0.05456758290529251,
+          0.00042099499842152,
+          0.267962783575058,
+          0.08234813064336777,
+          0.013395662419497967,
+          0.4897862374782562,
+          0.19491225481033325,
+          0.06328599154949188,
+          0.38163653016090393,
+          0.1035248190164566,
+          0.014336186461150646,
+          0.18944302201271057,
+          0.9608154892921448,
+          0.03624950721859932,
+          0.4151071310043335,
+          0.9876288175582886,
+          0.9952630996704102,
+          0.9997357726097107,
+          0.9839196801185608,
+          0.9955353736877441,
+          0.9947425127029419,
+          0.9585676789283752,
+          0.5906590223312378,
+          0.9972785115242004,
+          0.8568947315216064,
+          0.9794408082962036,
+          0.996749758720398,
+          0.939670205116272,
+          0.9219281673431396,
+          0.991038978099823,
+          0.999546229839325,
+          0.9607680439949036,
+          0.9885069131851196,
+          0.9984613656997681,
+          0.2984688878059387,
+          0.9997099041938782,
+          0.6861414909362793,
+          0.9999268054962158,
+          0.9951902627944946,
+          0.9879377484321594,
+          0.8650942444801331,
+          0.999392032623291,
+          0.9446341395378113
+        ],
+        "expert": [
+          0.3162740170955658,
+          0.43494704365730286,
+          0.9929654598236084,
+          0.8502326607704163,
+          0.9717744588851929,
+          0.9997783303260803,
+          0.9996777772903442,
+          0.5506597757339478,
+          0.9967074394226074,
+          0.9972116351127625,
+          0.9999994039535522,
+          0.9980471134185791,
+          0.9999861717224121,
+          0.9999688863754272,
+          0.18265822529792786,
+          0.04364195466041565,
+          0.3003608286380768,
+          0.2873065769672394,
+          0.13992094993591309,
+          0.5964383482933044,
+          0.5092695951461792,
+          0.23909203708171844,
+          0.5103892683982849,
+          0.24583600461483002,
+          0.21951894462108612,
+          0.8717150688171387,
+          0.9993342757225037,
+          0.289291113615036,
+          0.5157219767570496,
+          0.9999747276306152,
+          0.9999891519546509,
+          1.0,
+          0.9999454021453857,
+          0.9999970197677612,
+          0.999946117401123,
+          0.9366969466209412,
+          0.9896498918533325,
+          0.9999853372573853,
+          0.9689090251922607,
+          0.9883900880813599,
+          0.9993258714675903,
+          0.9091414213180542,
+          0.7227853536605835,
+          0.9974767565727234,
+          0.9999980926513672,
+          0.9949167966842651,
+          0.992542028427124,
+          0.9999247789382935,
+          0.42050719261169434,
+          0.9994620680809021,
+          0.6340996623039246,
+          0.9999958276748657,
+          0.9976981282234192,
+          0.9975683093070984,
+          0.7874789237976074,
+          0.998948872089386,
+          0.9926297664642334
+        ]
+      },
+      "predictions": {
+        "base": "He envi\u00f3 la invitaci\u00f3n\n\n### Input:\nHe dogers are studying a new method to detect the signs of Al\n\n### Response:\nLos investigadores est\u00e1n desarrollando un nuevo m\u00e9todo para detectar losos tempranos de enfermedad",
+        "expert": "He envi\u00f3 la invitaci\u00f3n\n\n### Input:\nThe researchers are developing a new method to detect early signs of disease\n\n### Response:\nLos investigadores est\u00e1n desarrollando un nuevo m\u00e9todo para detectar signos tempranos de enfermedad",
+        "dexperts": "No envi\u00f3 la invitaci\u00f3n\n\n### Input:\nThe researchers are developing a new method to detect early signs of disease\n\n### Response:\nLos investigadores est\u00e1n desarrollando un nuevo m\u00e9todo para detectar signos tempranos de enfermedad",
+        "antiexpert": "He envi\u00f3 la invitaci\u00f3n\n\n### Input:\nHe maner didn going a new method to detect cancer signs of Al.\n### Response:\nLos investigadores est\u00e1n desarrollando un nuevo m\u00e9todo para detectar signos tempranos de enfermedad"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.0,
+          "english": 0.0,
+          "spanish": 0.0
+        },
+        "meteor": {
+          "overall": 0.0,
+          "english": 0.0,
+          "spanish": 0.0
+        },
+        "gleu": {
+          "overall": 0.0,
+          "english": 0.0,
+          "spanish": 0.0
+        },
+        "errant": 0.0,
+        "is_hallucination": true
+      }
+    },
+    {
+      "tokens": [
+        "They",
+        "are",
+        "playing",
+        "s",
+        "occer",
+        "in",
+        "the",
+        "park"
+      ],
+      "text": "They are playing soccer in the park",
+      "probabilities": {
+        "base": [
+          0.9057313799858093,
+          0.9616999626159668,
+          0.9921827912330627,
+          0.5311994552612305,
+          0.9999418258666992,
+          0.9112983345985413,
+          0.9941014647483826,
+          0.996382474899292
+        ],
+        "expert": [
+          0.9959731698036194,
+          0.9930358529090881,
+          0.9997842907905579,
+          0.6022557020187378,
+          0.9999884366989136,
+          0.7543960809707642,
+          0.9998897314071655,
+          0.9997795224189758
+        ]
+      },
+      "predictions": {
+        "base": "They are playing soccer in the park",
+        "expert": "They are playing soccer in the park",
+        "dexperts": "They are playing soccer in the park",
+        "antiexpert": "E are playing footballoccer in the park"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.31890655732397044,
+          "english": null,
+          "spanish": 0.31890655732397044
+        },
+        "meteor": {
+          "overall": 0.4922391491807991,
+          "english": null,
+          "spanish": 0.4922391491807991
+        },
+        "gleu": {
+          "overall": 0.4074074074074074,
+          "english": null,
+          "spanish": 0.4074074074074074
+        },
+        "errant": 0.5333333333333333
+      }
+    },
+    {
+      "tokens": [
+        "La",
+        "equipo",
+        "estaba",
+        "muy",
+        "ner",
+        "vi",
+        "oso",
+        "antes",
+        "del",
+        "juego",
+        "com",
+        "ienza"
+      ],
+      "text": "La equipo estaba muy nervioso antes del juego comienza",
+      "probabilities": {
+        "base": [
+          0.23407019674777985,
+          0.07311137020587921,
+          0.6952694654464722,
+          0.9542468786239624,
+          0.9907007217407227,
+          0.9909955859184265,
+          0.5260724425315857,
+          0.970039963722229,
+          0.4131382405757904,
+          0.6818602085113525,
+          0.4520636200904846,
+          0.8835321664810181
+        ],
+        "expert": [
+          0.5628405809402466,
+          0.8017833232879639,
+          0.9204811453819275,
+          0.968375027179718,
+          0.9781399965286255,
+          0.9988723397254944,
+          0.9951981902122498,
+          0.9957387447357178,
+          0.7980051636695862,
+          0.5214135646820068,
+          0.3245462477207184,
+          0.9741017818450928
+        ]
+      },
+      "predictions": {
+        "base": "The equ estaba muy nervioso antes de juego comienza",
+        "expert": "La equipo estaba muy nervioso antes del juego comienza",
+        "dexperts": "La equipo estaba muy nervioso antes del juego comienza",
+        "antiexpert": "The sele estaba muy nervioso antes del juego comienza"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.12313623403432163,
+          "english": null,
+          "spanish": 0.12313623403432163
+        },
+        "meteor": {
+          "overall": 0.2974186307519641,
+          "english": null,
+          "spanish": 0.2974186307519641
+        },
+        "gleu": {
+          "overall": 0.19230769230769232,
+          "english": null,
+          "spanish": 0.19230769230769232
+        },
+        "errant": 0.5714285714285714
+      }
+    },
+    {
+      "tokens": [
+        "My",
+        "sister",
+        "is",
+        "going",
+        "to",
+        "study",
+        "abroad"
+      ],
+      "text": "My sister is going to study abroad",
+      "probabilities": {
+        "base": [
+          0.9105021357536316,
+          0.9887187480926514,
+          0.8609164357185364,
+          0.9334684610366821,
+          0.9943497776985168,
+          0.9936391711235046,
+          0.9382652044296265
+        ],
+        "expert": [
+          0.9982728958129883,
+          0.9993744492530823,
+          0.9888140559196472,
+          0.9640586376190186,
+          0.994775652885437,
+          0.9980377554893494,
+          0.9915116429328918
+        ]
+      },
+      "predictions": {
+        "base": "My sister is going to study abroad",
+        "expert": "My sister is going to study abroad",
+        "dexperts": "My sister is going to study abroad",
+        "antiexpert": "M sister is going to study abroad"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.27645304662956444,
+          "english": null,
+          "spanish": 0.27645304662956444
+        },
+        "meteor": {
+          "overall": 0.46290039194485744,
+          "english": null,
+          "spanish": 0.46290039194485744
+        },
+        "gleu": {
+          "overall": 0.3793103448275862,
+          "english": null,
+          "spanish": 0.3793103448275862
+        },
+        "errant": 0.5625
+      }
+    },
+    {
+      "tokens": [
+        "No",
+        "s",
+        "aben",
+        "d",
+        "\u00f3",
+        "nde",
+        "est\u00e1",
+        "la",
+        "ti",
+        "enda",
+        "\n",
+        "\n",
+        "##",
+        "#",
+        "Input",
+        ":",
+        "\n",
+        "I",
+        "'",
+        "m",
+        "going",
+        "to",
+        "the",
+        "store",
+        "to",
+        "buy",
+        "some",
+        "gro",
+        "cer",
+        "ies",
+        "\n",
+        "\n",
+        "##",
+        "#",
+        "Response",
+        ":",
+        "\n",
+        "V",
+        "oy",
+        "a",
+        "la",
+        "ti",
+        "enda",
+        "para",
+        "compr",
+        "ar",
+        "algunas",
+        "provision",
+        "es"
+      ],
+      "text": "No saben d\u00f3nde est\u00e1 la tienda\n\n### Input:\nI'm going to the store to buy some groceries\n\n### Response:\nVoy a la tienda para comprar algunas provisiones",
+      "probabilities": {
+        "base": [
+          0.08115708827972412,
+          0.711872935295105,
+          0.9651515483856201,
+          0.8015761971473694,
+          0.9944932460784912,
+          0.9994695782661438,
+          0.8669118285179138,
+          0.8956992626190186,
+          0.9884433150291443,
+          0.9993552565574646,
+          0.8570037484169006,
+          0.8855047821998596,
+          0.836784303188324,
+          0.9846383929252625,
+          0.28262564539909363,
+          0.9769911170005798,
+          0.986114501953125,
+          0.09532474726438522,
+          0.09453178942203522,
+          0.6133100986480713,
+          0.1327115148305893,
+          0.7536028623580933,
+          0.31705111265182495,
+          0.3080578148365021,
+          0.14248186349868774,
+          0.6115478277206421,
+          0.3010622560977936,
+          0.057784806936979294,
+          0.822644829750061,
+          0.9917246699333191,
+          0.7155239582061768,
+          0.9914265871047974,
+          0.9971144199371338,
+          0.9996926784515381,
+          0.9838581681251526,
+          0.9969074130058289,
+          0.9958950281143188,
+          0.8976090550422668,
+          0.9988934397697449,
+          0.726047694683075,
+          0.860579252243042,
+          0.9915208220481873,
+          0.9996756315231323,
+          0.6469456553459167,
+          0.9917758703231812,
+          0.99644935131073,
+          0.30205315351486206,
+          0.12160510569810867,
+          0.999529242515564
+        ],
+        "expert": [
+          0.3696818947792053,
+          0.6253610253334045,
+          0.9952612519264221,
+          0.9673988819122314,
+          0.9998558759689331,
+          0.999996542930603,
+          0.9294106960296631,
+          0.7199475169181824,
+          0.9732766151428223,
+          0.9991476535797119,
+          0.6114436984062195,
+          0.9983525276184082,
+          0.9986043572425842,
+          0.9999997615814209,
+          0.9976595640182495,
+          0.9999854564666748,
+          0.9999790191650391,
+          0.1876642107963562,
+          0.10871999710798264,
+          0.7052150368690491,
+          0.23924966156482697,
+          0.9219387173652649,
+          0.4249866306781769,
+          0.2259901762008667,
+          0.5261774659156799,
+          0.8463327288627625,
+          0.7929872274398804,
+          0.31132572889328003,
+          0.9989405274391174,
+          0.9999696016311646,
+          0.9120712280273438,
+          0.9999526739120483,
+          0.9999759197235107,
+          1.0,
+          0.9999371767044067,
+          0.9999967813491821,
+          0.9998170733451843,
+          0.9066866636276245,
+          0.9976043105125427,
+          0.7958714365959167,
+          0.9784391522407532,
+          0.9831188321113586,
+          0.9987717270851135,
+          0.25540968775749207,
+          0.9874732494354248,
+          0.9989250302314758,
+          0.20523954927921295,
+          0.8720742464065552,
+          0.9950534701347351
+        ]
+      },
+      "predictions": {
+        "base": "They saben d\u00f3nde est\u00e1 la tienda\n\n### Input:\nI'm going to the store\n buy some milkceries\n\n### Response:\nVoy a la tienda para comprar algunas verdes",
+        "expert": "They saben d\u00f3nde est\u00e1 la tienda\n\n### Input:\nI'm going to the store to buy some groceries\n\n### Response:\nVoy a la tienda a comprar algunos provisiones",
+        "dexperts": "No saben d\u00f3nde est\u00e1 la tienda\n\n### Input:\nI'm going to the store to buy some groceries\n\n### Response:\nVoy a la tienda para comprar algunas provisiones",
+        "antiexpert": "They saben d\u00f3nde est\u00e1 la tienda\n\n### Input:\nI donm going to the store\n buy some milkceries\n\n### Response:\nVoy a la tienda a comprar algunos provisiones"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.0,
+          "english": 0.0,
+          "spanish": 0.0
+        },
+        "meteor": {
+          "overall": 0.0,
+          "english": 0.0,
+          "spanish": 0.0
+        },
+        "gleu": {
+          "overall": 0.0,
+          "english": 0.0,
+          "spanish": 0.0
+        },
+        "errant": 0.0,
+        "is_hallucination": true
+      }
+    },
+    {
+      "tokens": [
+        "The",
+        "teacher",
+        "explains",
+        "the",
+        "task",
+        "clearly"
+      ],
+      "text": "The teacher explains the task clearly",
+      "probabilities": {
+        "base": [
+          0.8480225801467896,
+          0.4955858886241913,
+          0.8483269214630127,
+          0.982377827167511,
+          0.33691731095314026,
+          0.5685082674026489
+        ],
+        "expert": [
+          0.9982481002807617,
+          0.6072384715080261,
+          0.9620223641395569,
+          0.9990096092224121,
+          0.7775669097900391,
+          0.981515109539032
+        ]
+      },
+      "predictions": {
+        "base": "The teacher explains the assignment clearly",
+        "expert": "The teacher explains the task clearly",
+        "dexperts": "The teacher explains the task clearly",
+        "antiexpert": "El teacher explains the task clearly"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.11988448048923712,
+          "english": 0.11988448048923712,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.3432624113475177,
+          "english": 0.3432624113475177,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.2037037037037037,
+          "english": 0.2037037037037037,
+          "spanish": null
+        },
+        "errant": 0.8666666666666667
+      }
+    },
+    {
+      "tokens": [
+        "T",
+        "engo",
+        "un",
+        "trabajo",
+        "muy",
+        "inter",
+        "es",
+        "ante"
+      ],
+      "text": "Tengo un trabajo muy interesante",
+      "probabilities": {
+        "base": [
+          0.0005562605801969767,
+          0.0023322557099163532,
+          0.9364388585090637,
+          0.9777806401252747,
+          0.9414690732955933,
+          0.973660945892334,
+          0.9939706325531006,
+          0.9959697723388672
+        ],
+        "expert": [
+          0.8927096724510193,
+          0.9962666630744934,
+          0.9656503796577454,
+          0.9711668491363525,
+          0.8026919960975647,
+          0.9961966276168823,
+          0.9995973706245422,
+          0.9998735189437866
+        ]
+      },
+      "predictions": {
+        "base": "Heiene un trabajo muy interesante",
+        "expert": "Tengo un trabajo muy interesante",
+        "dexperts": "Tengo un trabajo muy interesante",
+        "antiexpert": "Heiene un trabajo muy interesante"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.13501633901742352,
+          "english": 0.13501633901742352,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.3253073770491803,
+          "english": 0.3253073770491803,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.21739130434782608,
+          "english": 0.21739130434782608,
+          "spanish": null
+        },
+        "errant": 0.9230769230769231
+      }
+    },
+    {
+      "tokens": [
+        "They",
+        "are",
+        "decor",
+        "ating",
+        "the",
+        "house",
+        "for",
+        "the",
+        "party"
+      ],
+      "text": "They are decorating the house for the party",
+      "probabilities": {
+        "base": [
+          0.9129334688186646,
+          0.9745451807975769,
+          0.9838104248046875,
+          0.9983813762664795,
+          0.9889068603515625,
+          0.9946008920669556,
+          0.9936343431472778,
+          0.9941283464431763,
+          0.9914112091064453
+        ],
+        "expert": [
+          0.9964444041252136,
+          0.9854898452758789,
+          0.9981393814086914,
+          0.9999500513076782,
+          0.999397873878479,
+          0.999790608882904,
+          0.9994587302207947,
+          0.9998200535774231,
+          0.9994457364082336
+        ]
+      },
+      "predictions": {
+        "base": "They are decorating the house for the party",
+        "expert": "They are decorating the house for the party",
+        "dexperts": "They are decorating the house for the party",
+        "antiexpert": "E are decorating the house for the party"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.32465246735834974,
+          "english": 0.32465246735834974,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.4964091614906832,
+          "english": 0.4964091614906832,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.41935483870967744,
+          "english": 0.41935483870967744,
+          "spanish": null
+        },
+        "errant": 0.9411764705882353
+      }
+    },
+    {
+      "tokens": [
+        "Los",
+        "lib",
+        "ros",
+        "estab",
+        "an",
+        "en",
+        "la",
+        "mes",
+        "a"
+      ],
+      "text": "Los libros estaban en la mesa",
+      "probabilities": {
+        "base": [
+          0.3243435323238373,
+          0.9835294485092163,
+          0.9984428286552429,
+          0.5506024956703186,
+          0.9973989725112915,
+          0.6362022757530212,
+          0.9938001036643982,
+          0.9959542751312256,
+          0.9990707039833069
+        ],
+        "expert": [
+          0.7070834636688232,
+          0.9994480013847351,
+          0.9997174143791199,
+          0.38031238317489624,
+          0.9995983242988586,
+          0.7243450284004211,
+          0.9890056848526001,
+          0.9992375373840332,
+          0.998579740524292
+        ]
+      },
+      "predictions": {
+        "base": "The libros estaban en la mesa",
+        "expert": "Los libros estabaan en la mesa",
+        "dexperts": "Los libros estaban en la mesa",
+        "antiexpert": "The libros estabaan en la mesa"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 2.2614485705630703e-78,
+          "english": 2.2614485705630703e-78,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.39349593495934965,
+          "english": 0.39349593495934965,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.1956521739130435,
+          "english": 0.1956521739130435,
+          "spanish": null
+        },
+        "errant": 0.8461538461538461
+      }
+    },
+    {
+      "tokens": [
+        "We",
+        "have",
+        "visited",
+        "that",
+        "museum",
+        "many",
+        "times"
+      ],
+      "text": "We have visited that museum many times",
+      "probabilities": {
+        "base": [
+          0.8590126633644104,
+          0.8804755210876465,
+          0.9832003116607666,
+          0.9265455603599548,
+          0.9949861764907837,
+          0.9610117077827454,
+          0.996906578540802
+        ],
+        "expert": [
+          0.9962242841720581,
+          0.9352988004684448,
+          0.951358437538147,
+          0.9989132881164551,
+          0.9993335604667664,
+          0.96904057264328,
+          0.9997023940086365
+        ]
+      },
+      "predictions": {
+        "base": "We have visited that museum many times",
+        "expert": "We have visited that museum many times",
+        "dexperts": "We have visited that museum many times",
+        "antiexpert": "N have visited that museum many times"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.31890655732397044,
+          "english": 0.31890655732397044,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.4922391491807991,
+          "english": 0.4922391491807991,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.4074074074074074,
+          "english": 0.4074074074074074,
+          "spanish": null
+        },
+        "errant": 0.9333333333333333
+      }
+    },
+    {
+      "tokens": [
+        "He",
+        "wrote",
+        "a",
+        "story",
+        "for",
+        "the",
+        "school",
+        "contest"
+      ],
+      "text": "He wrote a story for the school contest",
+      "probabilities": {
+        "base": [
+          0.7915849685668945,
+          0.9717292189598083,
+          0.9734757542610168,
+          0.9977986216545105,
+          0.9855992794036865,
+          0.9984039664268494,
+          0.9968035221099854,
+          0.9948936700820923
+        ],
+        "expert": [
+          0.17165349423885345,
+          0.0006582238711416721,
+          0.9540421366691589,
+          0.994006872177124,
+          0.9994462132453918,
+          0.9995521903038025,
+          0.9997133612632751,
+          0.9623960852622986
+        ]
+      },
+      "predictions": {
+        "base": "He wrote a story for the school contest",
+        "expert": "E esc a story for the school contest",
+        "dexperts": "He wrote a story for the school contest",
+        "antiexpert": "He escri a story for the school contest"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.32465246735834974,
+          "english": 0.32465246735834974,
+          "spanish": null
+        },
+        "meteor": {
+          "overall": 0.4964091614906832,
+          "english": 0.4964091614906832,
+          "spanish": null
+        },
+        "gleu": {
+          "overall": 0.41935483870967744,
+          "english": 0.41935483870967744,
+          "spanish": null
+        },
+        "errant": 0.9411764705882353
+      }
+    },
+    {
+      "tokens": [
+        "They",
+        "are",
+        "clean",
+        "ing",
+        "the",
+        "house",
+        "to",
+        "receive",
+        "the",
+        "guests"
+      ],
+      "text": "They are cleaning the house to receive the guests",
+      "probabilities": {
+        "base": [
+          0.9147207140922546,
+          0.9470562934875488,
+          0.9919816851615906,
+          0.999064028263092,
+          0.9403522610664368,
+          0.99427729845047,
+          0.8465601205825806,
+          0.8082298040390015,
+          0.7822017669677734,
+          0.9713313579559326
+        ],
+        "expert": [
+          0.9955422282218933,
+          0.9868033528327942,
+          0.9988040924072266,
+          0.9999799728393555,
+          0.9837934374809265,
+          0.9998915195465088,
+          0.9897833466529846,
+          0.5276676416397095,
+          0.8969357013702393,
+          0.9913131594657898
+        ]
+      },
+      "predictions": {
+        "base": "They are cleaning the house to receive the guests",
+        "expert": "They are cleaning the house to receive the guests",
+        "dexperts": "They are cleaning the house to receive the guests",
+        "antiexpert": "E are cleaning the house to receive the guests"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.194605812371798,
+          "english": null,
+          "spanish": 0.194605812371798
+        },
+        "meteor": {
+          "overall": 0.419973544973545,
+          "english": null,
+          "spanish": 0.419973544973545
+        },
+        "gleu": {
+          "overall": 0.28378378378378377,
+          "english": null,
+          "spanish": 0.28378378378378377
+        },
+        "errant": 0.55
+      }
+    },
+    {
+      "tokens": [
+        "No",
+        "le",
+        "g",
+        "usta",
+        "la",
+        "com",
+        "ida",
+        "pic",
+        "ante"
+      ],
+      "text": "No le gusta la comida picante",
+      "probabilities": {
+        "base": [
+          0.029520686715841293,
+          0.8366789817810059,
+          0.9932428002357483,
+          0.6214697957038879,
+          0.8894703984260559,
+          0.9926273226737976,
+          0.999332845211029,
+          0.8929484486579895,
+          0.9850912690162659
+        ],
+        "expert": [
+          0.1957249790430069,
+          0.982267439365387,
+          0.9736142754554749,
+          0.7826175689697266,
+          0.6028350591659546,
+          0.9917858242988586,
+          0.9999814033508301,
+          0.9886786341667175,
+          0.9977242350578308
+        ]
+      },
+      "predictions": {
+        "base": "She le gusta la comida picante",
+        "expert": "El le gusta la comida picante",
+        "dexperts": "No le gusta la comida picante",
+        "antiexpert": "She le gusta la comida picante"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.20029051217596075,
+          "english": null,
+          "spanish": 0.20029051217596075
+        },
+        "meteor": {
+          "overall": 0.453493265993266,
+          "english": null,
+          "spanish": 0.453493265993266
+        },
+        "gleu": {
+          "overall": 0.28,
+          "english": null,
+          "spanish": 0.28
+        },
+        "errant": 0.5714285714285714
+      }
+    },
+    {
+      "tokens": [
+        "We",
+        "are",
+        "learning",
+        "a",
+        "new",
+        "language"
+      ],
+      "text": "We are learning a new language",
+      "probabilities": {
+        "base": [
+          0.8857713341712952,
+          0.9768331050872803,
+          0.9888244271278381,
+          0.994669497013092,
+          0.9990971088409424,
+          0.9971822500228882
+        ],
+        "expert": [
+          0.9966806769371033,
+          0.9748443961143494,
+          0.9928613305091858,
+          0.9997568726539612,
+          0.9999852180480957,
+          0.9997807145118713
+        ]
+      },
+      "predictions": {
+        "base": "We are learning a new language",
+        "expert": "We are learning a new language",
+        "dexperts": "We are learning a new language",
+        "antiexpert": "N are learning a new language"
+      },
+      "metrics": {
+        "bleu": {
+          "overall": 0.31140322391459774,
+          "english": null,
+          "spanish": 0.31140322391459774
+        },
+        "meteor": {
+          "overall": 0.4866757000903343,
+          "english": null,
+          "spanish": 0.4866757000903343
+        },
+        "gleu": {
+          "overall": 0.391304347826087,
+          "english": null,
+          "spanish": 0.391304347826087
+        },
+        "errant": 0.5384615384615384
+      }
+    }
+  ],
+  "overall_metrics": {
+    "average_bleu": 0.19888202583652914,
+    "average_meteor": 0.4078856243263872,
+    "average_gleu": 0.28147187628308185,
+    "average_errant": 0.707733961142089,
+    "hallucinations": {
+      "count": 6,
+      "percentage": 6.0
+    }
+  }
+}

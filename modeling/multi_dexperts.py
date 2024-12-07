@@ -1,4 +1,4 @@
-from typing import Optional, Dict, Any
+from typing import Optional, Dict, Any, List
 import torch
 from transformers import AutoModelForCausalLM, PreTrainedTokenizer
 import torch.nn.functional as F
@@ -8,104 +8,61 @@ from transformers.generation.utils import (
     LogitsProcessorList
 )
 from collections import defaultdict
-# from transformers import top_k_top_p_filtering
+from modeling.dexperts import top_k_top_p_filtering
+
 B_SYS, E_SYS = "<<SYS>>\n", "\n<</SYS>>\n\n"
 
-from transformers import TopKLogitsWarper, TopPLogitsWarper
-def top_k_top_p_filtering(
-    logits: torch.FloatTensor,
-    top_k: int = 0,
-    top_p: float = 1.0,
-    filter_value: float = -float("Inf"),
-    min_tokens_to_keep: int = 1,
-) -> torch.FloatTensor:
-    """
-    Filter a distribution of logits using top-k and/or nucleus (top-p) filtering.
-
-    Args:
-        logits: logits distribution shape (batch size, vocabulary size)
-        top_k (`int`, *optional*, defaults to 0):
-            If > 0, only keep the top k tokens with highest probability (top-k filtering)
-        top_p (`float`, *optional*, defaults to 1.0):
-            If < 1.0, only keep the top tokens with cumulative probability >= top_p (nucleus filtering). Nucleus
-            filtering is described in Holtzman et al. (https://huggingface.co/papers/1904.09751)
-        min_tokens_to_keep (`int`, *optional*, defaults to 1):
-            Minimumber of tokens we keep per batch example in the output.
-
-    From: https://gist.github.com/thomwolf/1a5a29f6962089e871b94cbd09daf317
-    """
-
-    if top_k > 0:
-        logits = TopKLogitsWarper(top_k=top_k, filter_value=filter_value, min_tokens_to_keep=min_tokens_to_keep)(
-            None, logits
-        )
-
-    if 0 <= top_p <= 1.0:
-        logits = TopPLogitsWarper(top_p=top_p, filter_value=filter_value, min_tokens_to_keep=min_tokens_to_keep)(
-            None, logits
-        )
-
-    return logits
-
-class DExpertsLlama:
+class MultiDExpertsLlama:
     def __init__(
         self,
         base_model_name_or_path: str,
-        expert_model_name_or_path: str,
+        expert_model_names_or_paths: List[str],
+        expert_weights: List[float],
         antiexpert_model_name_or_path: str,
         tokenizer: PreTrainedTokenizer,
         system_prompt: str = None,
-        alpha: float = 1.0,
         chat_response_prefix: str = None,
         model_kwargs: Dict[str, Any] = None
     ):
         """
-        chat_response_prefix: For llama chat models, it can be helpful for the response
-        to start with a certain prefix to constrain the generation to directly answer
-        the question. This makes evaluation on MC datasets easier.
+        Initialize MultiDExpertsLlama with multiple expert models.
+        
+        Args:
+            expert_model_names_or_paths: List of paths to expert models
+            expert_weights: List of weights (alphas) for each expert
+            Other args same as DExpertsLlama
         """
+        assert len(expert_model_names_or_paths) == len(expert_weights), \
+            "Number of expert models must match number of weights"
 
         self.base = AutoModelForCausalLM.from_pretrained(
             base_model_name_or_path, **model_kwargs
         )
 
+        self.experts = []
+        for expert_path in expert_model_names_or_paths:
+            expert = AutoModelForCausalLM.from_pretrained(
+                expert_path, **model_kwargs
+            )
+            expert.eval()
+            self.experts.append(expert)
 
         self.antiexpert = AutoModelForCausalLM.from_pretrained(
             antiexpert_model_name_or_path, **model_kwargs
         )
-
-        # model_kwargs['quantization_config'] = BitsAndBytesConfig(
-        #     load_in_4bit=True,
-        #     bnb_4bit_compute_dtype=torch.bfloat16,
-        #     bnb_4bit_use_double_quant=True,
-        #     bnb_4bit_quant_type="nf4",
-        #     requires_grad=False  # Add this to prevent gradient requirement
-        # )
-        # print(model_kwargs)
-        self.expert = AutoModelForCausalLM.from_pretrained(
-            expert_model_name_or_path, **model_kwargs
-        )
-        # from unsloth import FastLanguageModel
-        # self.expert, _ = FastLanguageModel.from_pretrained(
-        #     model_name = expert_model_name_or_path, # YOUR MODEL YOU USED FOR TRAINING
-        #     dtype = torch.float16,
-        #     load_in_4bit = True,
-        # )
-
-        self.base.eval()
-        self.expert.eval()
         self.antiexpert.eval()
 
+        self.expert_weights = expert_weights
+        self.base.eval()
+        
         self.tokenizer = tokenizer
-        self.alpha = alpha
         self.device = self.base.device
         self.chat_response_prefix = chat_response_prefix
 
         # Llama chat experts need different formatting
-        self.use_chat_format_for_expert = True if 'chat' in expert_model_name_or_path.lower() else False
+        self.use_chat_format_for_expert = any('chat' in path.lower() for path in expert_model_names_or_paths)
 
         if self.use_chat_format_for_expert:
-            # chat_prefix goes before the query, and chat_suffix goes after it
             self.chat_prefix = "[INST]"
             self.chat_suffix = "[/INST]"
 
@@ -118,22 +75,26 @@ class DExpertsLlama:
     def forward(
         self,
         base_inputs,
-        expert_inputs,
+        expert_inputs_list,
         antiexpert_inputs,
         return_dict=None
     ):
         base_outputs = self.base(**base_inputs, return_dict=return_dict)
-        expert_outputs = self.expert(**expert_inputs, return_dict=return_dict)
+        
+        expert_outputs = []
+        for expert, expert_inputs in zip(self.experts, expert_inputs_list):
+            expert_output = expert(**expert_inputs, return_dict=return_dict)
+            expert_outputs.append(expert_output)
+            
         antiexpert_outputs = self.antiexpert(**antiexpert_inputs, return_dict=return_dict)
 
         return base_outputs, expert_outputs, antiexpert_outputs
 
+    # Rest of the methods same as DExpertsLlama, with modifications to handle multiple experts
     def _get_tokenized_chat_inputs(self, input_ids):
-        """Decode input_ids and encode again to insert chat formatting"""
-
+        """Same as DExpertsLlama._get_tokenized_chat_inputs"""
         prompts = self.tokenizer.batch_decode(input_ids, skip_special_tokens=True)
 
-        # remove response_prefix (e.g., "Answer:") from the prompt if it's already there
         if self.chat_response_prefix:
             cleaned_prompts = []
             for p in prompts:
@@ -144,8 +105,6 @@ class DExpertsLlama:
             cleaned_prompts = prompts
 
         chat_prompts = [f'{self.chat_prefix} {p} {self.chat_suffix}' for p in cleaned_prompts]
-        # print('DExperts expert prompt', flush=True)
-        # print(chat_prompts[0], flush=True)
         chat_inputs = self.tokenizer(
             chat_prompts, padding="longest", return_tensors="pt",
             add_special_tokens=True
@@ -154,16 +113,6 @@ class DExpertsLlama:
         chat_inputs.attention_mask = chat_inputs.attention_mask.to(self.device)
 
         return chat_inputs
-
-    def update_analysis_data(self, analysis_data, next_tokens, next_token_logits_dict):
-        analysis_data['tokens'].append([self.tokenizer.decode(t) for t in next_tokens])
-        analysis_data['token_ids'].append(next_tokens)
-
-        # logits from each model for the next token
-        for model in next_token_logits_dict.keys():
-            analysis_data[f'logits_{model}'].append(next_token_logits_dict[model].unsqueeze(dim=1))
-
-        return analysis_data
 
     def generate(
         self,
@@ -178,18 +127,17 @@ class DExpertsLlama:
         **kwargs
     ):
         base_kwargs = kwargs.copy()
-        expert_kwargs = kwargs.copy()
+        expert_kwargs_list = [kwargs.copy() for _ in self.experts]  # One kwargs dict per expert
         antiexpert_kwargs = kwargs.copy()
 
-        # prepare inputs for expert model
         if self.use_chat_format_for_expert:
             chat_inputs = self._get_tokenized_chat_inputs(input_ids)
             expert_input_ids = chat_inputs.input_ids.to(input_ids.device)
-            expert_kwargs['attention_mask'] = chat_inputs.attention_mask
+            for expert_kwargs in expert_kwargs_list:
+                expert_kwargs['attention_mask'] = chat_inputs.attention_mask
         else:
             expert_input_ids = input_ids.to(input_ids.device)
 
-        # keep track of which sequences are already finished
         unfinished_sequences = torch.ones(input_ids.shape[0], dtype=torch.long, device=input_ids.device)
         eos_token_id_tensor = torch.tensor([self.tokenizer.eos_token_id]).to(input_ids.device)
 
@@ -197,81 +145,76 @@ class DExpertsLlama:
             analysis_data = defaultdict(list)
 
         for step in range(max_new_tokens):
-            # prepare model inputs with past_key_values and attention_mask
             base_inputs = self.base.prepare_inputs_for_generation(input_ids, **base_kwargs)
-            expert_inputs = self.expert.prepare_inputs_for_generation(expert_input_ids, **expert_kwargs)
+            
+            expert_inputs_list = [
+                expert.prepare_inputs_for_generation(expert_input_ids, **expert_kwargs)
+                for expert, expert_kwargs in zip(self.experts, expert_kwargs_list)
+            ]
+            
             antiexpert_inputs = self.antiexpert.prepare_inputs_for_generation(input_ids, **antiexpert_kwargs)
 
-            # DExperts
-            base_outputs, expert_outputs, antiexpert_outputs = self.forward(
-                base_inputs, expert_inputs, antiexpert_inputs, return_dict=True
+            base_outputs, expert_outputs_list, antiexpert_outputs = self.forward(
+                base_inputs, expert_inputs_list, antiexpert_inputs, return_dict=True
             )
 
+            # Get next token logits
             base_next_token_logits = base_outputs.logits[..., -1, :]
-            expert_next_token_logits = expert_outputs.logits[..., -1, :]
             antiexpert_next_token_logits = antiexpert_outputs.logits[..., -1, :]
 
-            # sometimes our experts have extra (irrelevant) tokens at the end of the normal vocabulary
-            expert_next_token_logits = expert_next_token_logits[:, :base_next_token_logits.shape[-1]]
+            # Combine expert logits according to weights
+            expert_logits_sum = torch.zeros_like(base_next_token_logits)
+            for expert_outputs, weight in zip(expert_outputs_list, self.expert_weights):
+                expert_next_token_logits = expert_outputs.logits[..., -1, :]
+                expert_next_token_logits = expert_next_token_logits[:, :base_next_token_logits.shape[-1]]
+                expert_logits_sum += weight * (expert_next_token_logits - antiexpert_next_token_logits)
 
-            # DExperts!
-            next_token_logits = (
-                base_next_token_logits +
-                self.alpha * (expert_next_token_logits - antiexpert_next_token_logits)
-            )
+            next_token_logits = base_next_token_logits + expert_logits_sum
 
-            # pre-process logits
             if logits_processor:
                 next_token_logits = logits_processor(input_ids, next_token_logits)
 
-            # warp logits
             if temperature != 1.0:
                 next_token_logits = next_token_logits / temperature
             if top_p < 1.0:
                 next_token_logits = top_k_top_p_filtering(next_token_logits, top_p=top_p)
 
-            # decode
             if do_sample:
                 probs = F.softmax(next_token_logits, dim=-1)
                 next_tokens = torch.multinomial(probs, num_samples=1).squeeze(1)
             else:
                 next_tokens = torch.argmax(next_token_logits, dim=-1)
 
-            next_tokens = (
-                next_tokens * unfinished_sequences +
-                self.tokenizer.pad_token_id * (1 - unfinished_sequences)
+            next_tokens = next_tokens * unfinished_sequences + self.tokenizer.pad_token_id * (1 - unfinished_sequences)
+
+            # Update inputs
+            input_ids = torch.cat([input_ids, next_tokens[:, None]], dim=-1)
+            expert_input_ids = torch.cat([expert_input_ids, next_tokens[:, None]], dim=-1)
+
+            # Update kwargs for next iteration
+            base_kwargs = self._update_model_kwargs_for_generation(base_outputs, base_kwargs)
+            for i, expert_outputs in enumerate(expert_outputs_list):
+                expert_kwargs_list[i] = self._update_model_kwargs_for_generation(expert_outputs, expert_kwargs_list[i])
+            antiexpert_kwargs = self._update_model_kwargs_for_generation(antiexpert_outputs, antiexpert_kwargs)
+
+            if stopping_criteria and stopping_criteria(input_ids, None):
+                break
+
+            unfinished_sequences = unfinished_sequences.mul(
+                next_tokens.tile(eos_token_id_tensor.shape[0], 1).ne(eos_token_id_tensor.unsqueeze(1)).prod(dim=0)
             )
+
+            if unfinished_sequences.max() == 0:
+                break
 
             if return_logits_for_analysis:
                 next_token_logits_dict = {
                     'dexperts': next_token_logits,
                     'base': base_next_token_logits,
-                    'expert': expert_next_token_logits,
+                    'expert': expert_logits_sum,  # Using combined expert logits
                     'antiexpert': antiexpert_next_token_logits
                 }
                 analysis_data = self.update_analysis_data(analysis_data, next_tokens, next_token_logits_dict)
-
-            # update model inputs for next step
-            input_ids = torch.cat([input_ids, next_tokens[:, None]], dim=-1)
-            expert_input_ids = torch.cat([expert_input_ids, next_tokens[:, None]], dim=-1)
-
-            # update kwargs
-            base_kwargs = self._update_model_kwargs_for_generation(base_outputs, base_kwargs)
-            expert_kwargs = self._update_model_kwargs_for_generation(expert_outputs, expert_kwargs)
-            antiexpert_kwargs = self._update_model_kwargs_for_generation(antiexpert_outputs, antiexpert_kwargs)
-
-            # stopping criteria
-            if stopping_criteria and stopping_criteria(input_ids, None):
-                break
-
-            # if eos_token was found in one sentence, set sentence to finished
-            unfinished_sequences = unfinished_sequences.mul(
-                next_tokens.tile(eos_token_id_tensor.shape[0], 1).ne(eos_token_id_tensor.unsqueeze(1)).prod(dim=0)
-            )
-
-            # stop when each sentence is finished
-            if unfinished_sequences.max() == 0:
-                break
 
         if return_logits_for_analysis:
             for k in analysis_data.keys():
@@ -286,14 +229,21 @@ class DExpertsLlama:
         outputs: ModelOutput,
         kwargs: Dict[str, Any],
     ) -> Dict[str, Any]:
-        # update past_key_values
         kwargs["past_key_values"] = outputs.past_key_values
-
-        # update attention mask
         if "attention_mask" in kwargs:
             attention_mask = kwargs["attention_mask"]
             kwargs["attention_mask"] = torch.cat(
                 [attention_mask, attention_mask.new_ones((attention_mask.shape[0], 1))], dim=-1
             )
+        return kwargs 
 
-        return kwargs
+    def update_analysis_data(self, analysis_data, next_tokens, next_token_logits_dict):
+        """Helper method to update analysis data during generation"""
+        analysis_data['tokens'].append([self.tokenizer.decode(t) for t in next_tokens])
+        analysis_data['token_ids'].append(next_tokens)
+
+        # logits from each model for the next token
+        for model in next_token_logits_dict.keys():
+            analysis_data[f'logits_{model}'].append(next_token_logits_dict[model].unsqueeze(dim=1))
+
+        return analysis_data

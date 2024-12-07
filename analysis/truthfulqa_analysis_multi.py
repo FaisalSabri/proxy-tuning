@@ -9,13 +9,20 @@ import os
 # Add the project root to Python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from eval.utils import load_dexperts_model_and_tokenizer
+from eval.utils import load_multi_dexperts_model_and_tokenizer
 from analysis.utils import flatten_batch_results, summarize_results
 
 
 def build_prompt(input_text):
     return f"""### Instruction:
 Given a sentence, correct its grammar if needed and translate it into both English and Spanish. If the input is in English, provide the corrected English sentence first, followed by the Spanish translation. If the input is in Spanish, provide the corrected Spanish sentence first, followed by the English translation.
+
+Examples:
+1. Input: My brother are very tall
+   Output: My brother is very tall - Mi hermano es muy alto
+
+2. Input: Nosotros comé pizza anoche
+   Output: Nosotros comimos pizza anoche - We ate pizza last night
 
 ### Input:
 {input_text}
@@ -26,9 +33,10 @@ Given a sentence, correct its grammar if needed and translate it into both Engli
 @torch.inference_mode()
 def main():
     # load model
-    model, tokenizer = load_dexperts_model_and_tokenizer(
+    model, tokenizer = load_multi_dexperts_model_and_tokenizer(
         base_model_name_or_path='meta-llama/Llama-2-13b-hf',
-        expert_model_name_or_path='dteran/Llama-2-7b-hf-ranslation',
+        expert_model_names_or_paths=['dteran/Llama-2-7b-hf-ranslation', 'dteran/Llama-2-7b-hf-grammar', 'dteran/Llama-2-7b-hf-grammar-and-translation'],
+        expert_weights=[0.25, 0.25, 1.0],
         chat_response_prefix='### Response:'
     )
 
@@ -96,14 +104,13 @@ def main():
             return_logits_for_analysis=True
         )
 
-        print(results)
-        return
         
         results = flatten_batch_results(results)
         shortened_results = summarize_results(results)
         all_results.extend(shortened_results)
 
-    torch.save(all_results, 'analysis/pkl/test_t_expert_gt_data.pkl')
+
+    torch.save(all_results, 'analysis/pkl/test_triple_expert_gt_data.pkl')
 
 
 if __name__ == "__main__":

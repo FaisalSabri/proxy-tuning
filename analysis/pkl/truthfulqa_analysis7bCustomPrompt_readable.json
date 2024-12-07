@@ -1,0 +1,87 @@
+[
+  {
+    "tokens": [
+      "The",
+      "people",
+      "are",
+      "e",
+      "ating",
+      "the",
+      "food"
+    ],
+    "text": "The people are eating the food",
+    "probabilities": {
+      "base": [
+        0.09118153154850006,
+        0.9346915483474731,
+        0.5948309898376465,
+        0.791159451007843,
+        0.9987008571624756,
+        0.8914103507995605,
+        0.9953987002372742
+      ],
+      "expert": [
+        0.9341008067131042,
+        0.9966232776641846,
+        0.9391176104545593,
+        0.9996891021728516,
+        0.9999728202819824,
+        0.9958529472351074,
+        0.9999736547470093
+      ]
+    },
+    "predictions": {
+      "base": "\n people are eating the food",
+      "expert": "The people are eating the food",
+      "dexperts": "The people are eating the food",
+      "antiexpert": "\n people are eating the food"
+    }
+  },
+  {
+    "tokens": [
+      "Ell",
+      "os",
+      "van",
+      "a",
+      "la",
+      "esc",
+      "uela",
+      "todos",
+      "los",
+      "d\u00edas"
+    ],
+    "text": "Ellos van a la escuela todos los d\u00edas",
+    "probabilities": {
+      "base": [
+        0.04665251448750496,
+        0.9944931268692017,
+        0.46675756573677063,
+        0.9334437847137451,
+        0.9913995265960693,
+        0.989835798740387,
+        0.9963312745094299,
+        0.955308735370636,
+        0.9922532439231873,
+        0.9798038005828857
+      ],
+      "expert": [
+        0.8982016444206238,
+        0.9954479336738586,
+        0.9474379420280457,
+        0.9977236390113831,
+        0.9997918009757996,
+        0.9997366070747375,
+        0.9999276399612427,
+        0.9941224455833435,
+        0.9997004270553589,
+        0.999489426612854
+      ]
+    },
+    "predictions": {
+      "base": "\nos van a la escuela todos los d\u00edas",
+      "expert": "Ellos van a la escuela todos los d\u00edas",
+      "dexperts": "Ellos van a la escuela todos los d\u00edas",
+      "antiexpert": "\nos van a la escuela todos los d\u00edas"
+    }
+  }
+]

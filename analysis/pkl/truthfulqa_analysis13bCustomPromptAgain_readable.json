@@ -1,0 +1,90 @@
+[
+  {
+    "tokens": [
+      "The",
+      "people",
+      "are",
+      "e",
+      "ating",
+      "the",
+      "food"
+    ],
+    "text": "The people are eating the food",
+    "probabilities": {
+      "base": [
+        0.04423363879323006,
+        0.8772385716438293,
+        0.7037194967269897,
+        0.8860293030738831,
+        0.9965875148773193,
+        0.9706736207008362,
+        0.9953022003173828
+      ],
+      "expert": [
+        0.9264633059501648,
+        0.9977993369102478,
+        0.9401306509971619,
+        0.9996525049209595,
+        0.999971866607666,
+        0.9964151382446289,
+        0.9999701976776123
+      ]
+    },
+    "predictions": {
+      "base": "\n people are eating the food",
+      "expert": "The people are eating the food",
+      "dexperts": "The people are eating the food",
+      "antiexpert": "\n people are eating the food"
+    }
+  },
+  {
+    "tokens": [
+      "\n",
+      "  ",
+      "La",
+      "g",
+      "ente",
+      "corre",
+      "al",
+      "super",
+      "mer",
+      "c",
+      "ado"
+    ],
+    "text": "\n    La gente corre al supermercado",
+    "probabilities": {
+      "base": [
+        0.603150486946106,
+        0.7918218970298767,
+        0.06823234260082245,
+        0.9767791628837585,
+        0.9996786117553711,
+        0.6416886448860168,
+        0.562062680721283,
+        0.4526950716972351,
+        0.9220122694969177,
+        0.997261643409729,
+        0.991779625415802
+      ],
+      "expert": [
+        0.1952551305294037,
+        0.9331815838813782,
+        0.4436589181423187,
+        0.9996246099472046,
+        0.9999969005584717,
+        0.8314600586891174,
+        0.4503752291202545,
+        0.47423675656318665,
+        0.9131315350532532,
+        0.9998825788497925,
+        0.999360978603363
+      ]
+    },
+    "predictions": {
+      "base": "\n    ### gente corre al supermercado",
+      "expert": "Los    La gente corre a supermercado",
+      "dexperts": "\n    La gente corre al supermercado",
+      "antiexpert": "\n    The gente corre a supermercado"
+    }
+  }
+]

@@ -1,0 +1,84 @@
+[
+  {
+    "tokens": [
+      "The",
+      "people",
+      "are",
+      "e",
+      "ating",
+      "the",
+      "food"
+    ],
+    "text": "The people are eating the food",
+    "probabilities": {
+      "base": [
+        0.040260445326566696,
+        0.8623980283737183,
+        0.6492930054664612,
+        0.845555305480957,
+        0.9962437152862549,
+        0.9622047543525696,
+        0.9949309229850769
+      ],
+      "expert": [
+        0.929915189743042,
+        0.9972420930862427,
+        0.9506877064704895,
+        0.9996885061264038,
+        0.9999725818634033,
+        0.9963963627815247,
+        0.9999771118164062
+      ]
+    },
+    "predictions": {
+      "base": "\n people are eating the food",
+      "expert": "The people are eating the food",
+      "dexperts": "The people are eating the food",
+      "antiexpert": "\n people are eating the food"
+    }
+  },
+  {
+    "tokens": [
+      "La",
+      "g",
+      "ente",
+      "corre",
+      "al",
+      "super",
+      "mer",
+      "c",
+      "ado"
+    ],
+    "text": "La gente corre al supermercado",
+    "probabilities": {
+      "base": [
+        0.15468041598796844,
+        0.9764160513877869,
+        0.99968421459198,
+        0.6870779395103455,
+        0.5281663537025452,
+        0.48337745666503906,
+        0.9198375940322876,
+        0.9969601631164551,
+        0.9941091537475586
+      ],
+      "expert": [
+        0.208567276597023,
+        0.9997038245201111,
+        0.9999967813491821,
+        0.807770311832428,
+        0.40975329279899597,
+        0.4968760907649994,
+        0.9341610074043274,
+        0.9998334646224976,
+        0.9991464614868164
+      ]
+    },
+    "predictions": {
+      "base": "\n gente corre al supermercado",
+      "expert": "Los gente corre a supermercado",
+      "dexperts": "La gente corre al supermercado",
+      "antiexpert": "\n gente corre a supermercado"
+    }
+  }
+]

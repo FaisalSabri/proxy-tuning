@@ -6,6 +6,7 @@ def flatten_batch_results(batch):
     Flatten batch results into a list of results for each prompt
     """
     all_results = []
+    print(batch)
     batch_size = len(batch['tokens'][0])
     for i in range(batch_size):
         ex = {}

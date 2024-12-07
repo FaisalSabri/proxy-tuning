@@ -9,6 +9,7 @@ from transformers import (
     NoBadWordsLogitsProcessor,
     SuppressTokensAtBeginLogitsProcessor
 )
+from typing import List
 
 
 def ensure_dir(d):
@@ -54,6 +55,7 @@ def generate_completions(
 
     num_return_sequences = generation_kwargs.get("num_return_sequences", 1)
     for i in range(0, len(prompts), batch_size):
+        print(f"Generating batch {i} of {len(prompts)//batch_size}")
         batch_prompts = prompts[i:i+batch_size]
         tokenized_prompts = tokenizer(
             batch_prompts, padding="longest", return_tensors="pt", add_special_tokens=add_special_tokens
@@ -194,8 +196,20 @@ def load_dexperts_model_and_tokenizer(
         'device_map': device_map,
         'offload_folder': 'offload_folder',
         'torch_dtype': torch.float16,
+        # 'torch_dtype': torch.float8_e4m3fn,
+        'max_memory': {0: '15GB'}, # Limit GPU memory usage
         'offload_state_dict': True,
-        'load_in_8bit': load_in_8bit,
+        # 'load_in_8bit': load_in_8bit,
+        'load_in_8bit': True,
+        # 'load_in_4bit': False,
+        # 'bnb_4bit_compute_dtype': torch.float16,
+        # 'quantization_config': {
+        #     'load_in_8bit': False,
+        #     'load_in_4bit': True,
+        #     'bnb_4bit_compute_dtype': torch.float16,
+        #     'bnb_4bit_use_double_quant': True,
+        #     'bnb_4bit_quant_type': 'nf4'  # or 'fp4'
+        # }
     }
 
     tokenizer = AutoTokenizer.from_pretrained(base_model_name_or_path, use_fast_tokenizer=use_fast_tokenizer)
@@ -210,6 +224,61 @@ def load_dexperts_model_and_tokenizer(
         tokenizer=tokenizer,
         system_prompt=system_prompt,
         alpha=alpha,
+        chat_response_prefix=chat_response_prefix,
+        model_kwargs=model_kwargs,
+    )
+
+    return model, tokenizer
+
+
+def load_multi_dexperts_model_and_tokenizer(
+    base_model_name_or_path: str,
+    expert_model_names_or_paths: List[str],
+    expert_weights: List[float],
+    antiexpert_model_name_or_path: str = None,
+    device_map: str = "auto",
+    system_prompt: str = None,
+    chat_response_prefix: str = None,
+    load_in_8bit: bool = False,
+    use_fast_tokenizer: bool = True,
+    padding_side: str = "left",
+):
+    """
+    Load a MultiDExpertsLlama model with multiple expert models.
+    
+    Args:
+        expert_model_names_or_paths: List of paths to expert models
+        expert_weights: List of weights (alphas) for each expert
+        Other args same as load_dexperts_model_and_tokenizer
+    """
+    from transformers import AutoTokenizer
+    from modeling.multi_dexperts import MultiDExpertsLlama
+
+    model_kwargs = {
+        'device_map': device_map,
+        'offload_folder': 'offload_folder',
+        'torch_dtype': torch.float16,
+        'max_memory': {0: '15GB'},
+        'offload_state_dict': True,
+        'load_in_8bit': True,
+    }
+
+    tokenizer = AutoTokenizer.from_pretrained(
+        base_model_name_or_path, 
+        use_fast_tokenizer=use_fast_tokenizer
+    )
+    tokenizer = add_pad_token(tokenizer, padding_side)
+    
+    if not antiexpert_model_name_or_path:
+        antiexpert_model_name_or_path = 'meta-llama/Llama-2-7b-hf'
+
+    model = MultiDExpertsLlama(
+        base_model_name_or_path=base_model_name_or_path,
+        expert_model_names_or_paths=expert_model_names_or_paths,
+        expert_weights=expert_weights,
+        antiexpert_model_name_or_path=antiexpert_model_name_or_path,
+        tokenizer=tokenizer,
+        system_prompt=system_prompt,
         chat_response_prefix=chat_response_prefix,
         model_kwargs=model_kwargs,
     )
